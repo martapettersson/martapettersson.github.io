@@ -1,0 +1,53 @@
+@import "./variables";
+@import "./mixins";
+
+body {
+	margin: 0px;
+}
+.wrapper {
+	@include flex(flex-start, column);
+	width: 1000px;
+	margin: 0px auto;
+}
+
+.baseStyle {
+	font-family: $myFont;
+	background-color: $lightColor;
+	color: $darkColor;
+}
+
+header,
+footer {
+	@extend .baseStyle;
+	background-color: $mainColor;
+	color: $darkColor;
+	@include flex(space-between, row);
+	align-items: baseline;
+	ul {
+		font-weight: bold;
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		@include flex(space-between, row);
+		li {
+			margin-right: 10px;
+		}
+	}
+}
+
+.mainContent {
+	@include flex(center, row);
+	align-items: center;
+	height: 500px;
+}
+
+#textHome p {
+	width: 500px;
+	height: 300px;
+}
+
+#picHome img {
+	width: 300px;
+	height: 300px;
+	border-radius: 100%;
+}
