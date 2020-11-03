@@ -1,0 +1,95 @@
+﻿Marta Pettersson
+2020-11-03
+Scrum
+Scrum är ett av flera ramverk som implementerar det Agila tankesättet. Ramverket är lättviktigt och lättförståeligt. Arbetet är uppdelat i korta iterationer, s.k. Sprintar. Människorna inom ett Scrumteam är uppdelade i tre roller: Produktägare,Scrum Master och Utvecklingsteam. Genom ett antal definierade dokument kan Utvecklingsteamets arbete struktureras, kommuniceras och visualiseras i realtid. För att effektivisera processen, definierar Scrum de ceremonier och möten som behövs för att arbetet ska flyta på. 
+
+
+Scrum uppfanns under 1990-talet och är idag en etablerad metodik för systemutveckling som används över hela världen. En fördel med scrum är fokuseringen på affärsnytta och möjligheten att förändra projektet på ett strukturerat sätt. I scrum finns det inte en klassisk kravspecifikation utan man har istället en backlog. En backlog är kort sagt en prioriterad och levande lista med önskemål. Detta innebär att i ett projekt kan önskemål som är aktuella vid projektets start falla bort om de prioriteras ned under projektets gång och nya önskemål kan också läggas till.
+
+
+Just ordet "scrum" är en term från sporten rugby, och är den täta axel mot axel-formation teamet använder för att föra bollen framåt när den sätts i spel. De japanska forskarna Hirotaka Takeuchi och Ikujiro Nonaka myntade uttrycket och tyckte rugby var en bra liknelse eftersom ett tvärfunktionellt team samarbetar för att göra klart produkten på samma sätt som ett rugbylag spelar tillsammans för att föra bollen uppför planen. Scrum skapades ursprungligen av Jeff Sutherland och Ken Schwaber.
+I scrum finns 3 uttalade roller:
+Produktägare (product owner):
+Produktägaren sammanställer och prioriterar önskemål om tillägg och ändringar främst utifrån affärsnytta. I ett webbprojekt är det vanligt att produktägaren är en projektledare hos beställaren.
+Scrum master:
+Scrum mastern coachar teamet och ser till att allt rullar på smidigt. Scrum mastern stämmer av mellan aktörer samt ser till att det inte finns några hinder för teamet.
+Team:
+Teamet är självorganiserande och bestämmer gemensamt vem som gör vad och hur man löser olika uppgifter.
+Vilka komponenter finns inom scrum?
+Backlog (Product backlog)
+En prioriterad lista med alla önskemål om produkten. Produktägaren prioriterar och ansvarar för backlogen. En backlog skrivs ofta i form av user stories men kan även vara organiserad på andra sätt. Genom att jämföra de tidsestimerade och prioriterade önskemålen med tillgänglig tid tas en sprint backlog fram som teamet åtar sig att genomföra.
+
+
+Sprint backlog
+Den del av produktbacklogen som teamet åtar sig att implementera under en sprint.
+
+
+Sprint
+I scrum delas arbetet in i sprintar. En sprint kan vara mellan 3 och 30 dagar lång. På Happiness arbetar vi gärna med 2 veckors sprintar. En sprint inleds med ett planeringsmöte (Sprint planning) och avslutas med en demonstration och genomgång av det som utvecklats under sprinten (Sprint review). Under sprinten sker dagliga Daily scrums och sist i en sprint görs en återblick (Sprint retrospective).
+
+
+Daily scrum
+Ett kort statusmöte för teamet. Scrum master går igenom alla personer i teamet
+som besvarar 3 frågor:
+1. Vad har jag gjort sedan igår?
+2. Vad ska jag göra till imorgon?
+3. Finns det något som hindrar mig?
+
+
+Sprintgenomgång (Sprint review)
+En genomgång av status på det arbete som genomförts i sprinten samt demonstration av funktionaliteten för produktägare, kunder och andra inbjudna intressenter. Syftet är att alla intressenter ska få bästa möjliga förståelse för dagsläget.
+
+
+Återblick (Sprint retrospective)
+Team, scrum master och produktägare går tillsammans igenom erfarenheter från sprinten och identifierar möjliga förbättringar i arbetssättet. Punkter väljs ut och åtgärdas i kommande sprint. 
+
+
+Sprint planning
+Produktägaren, scrum master och teamet går igenom de önskemål som finns. Därefter bryter teamet ned kraven och tidsestimerar (ofta med planning poker och ibland med story points istället för timmar).
+________________
+Grafisk profil
+Vad är en grafisk profil?
+Grafisk profil är en typ av manual/instruktion för hur ett företags/organisations 
+* logotyp,
+* färger, 
+* typsnitt och 
+* grafiska element som kan ingå i den visuella kommunikationen ska användas. 
+
+
+Syftet är att kunna kommunicera enhetligt för att bygga ett starkt varumärke. Genom att vara konsekvent med designen så blir det tydligt för mottagaren vem kommunikationen kommer ifrån och det skapar igenkänning.
+Att göra en grafisk profil
+Profilen kan sammanställas i ett dokument eller liknande för att ha som utgångspunkt när man skapar bilder, reklamkampanjer, affischer, bloggheader, hemsidedesign, visitkort m.m. Vissa företag har också sin grafiska profil på sin hemsida med nedladdningsbara logotyper, färger, m.m. för att underlätta för kunder eller liknande som ska jobba med profilen.
+
+
+Generellt kan man säga att en grafisk profil bör innehålla:
+* En logotyp, gärna i några olika utföranden så den kan anpassas efter olika användningsområden.
+* En eller flera färger
+* Ett eller två typsnitt
+* Eventuella mönster, symboler eller andra grafiska element
+
+
+Viktigt att tänka på: vad ska kommuniceras och till vem? Vad kan alla olika element i en grafiska profil skapa för associationer hos den som ser den digitala kommunikationen? Alla tolkar inte saker på samma sätt – så det är viktigt att tänka igenom konnotationer, symbolik, färgassociationer osv. 
+________________
+
+
+Tillgänglighet
+Information och tjänster ska kunna användas av alla människor oavsett till exempel funktionsnedsättning (eller ”bredast möjliga spektrum av egenskaper och förmågor” som det står i definitionen av ”tillgänglighet” i ISO-standarden 26 800). 
+
+
+Begreppet tillgänglighet är centralt i Vägledningen för Webbutveckling - De officiella riktlinjerna för hur man bör arbeta med webbplatser i offentlig sektor. Det betyder bland annat att information och tjänster ska gå att nå; servern ska vara åtkomlig, filformatet läsbart, säkerheten god, prestandan acceptabel m.m. Vägledningens huvudfokus är den aspekt av tillgänglighet som har att göra med funktionshinder. Socialstyrelsen definierar funktionshinder som en ”begränsning som en funktionsnedsättning innebär för en person i relation till omgivningen”. Funktionshinder orsakas alltså av det glapp som kan finnas mellan individens förmågor och omgivningens krav. Funktionsnedsättningar kan vara tillfälliga eller bestående, men tillgänglighet kan ofta förhindra att en funktionsnedsättning medför funktionshinder. 
+
+
+Ett bra sätt att förhindra att funktionshinder uppstår är att utgå från den breda variation som finns mellan olika människors förmågor och egenskaper, snarare än att designa för en genomsnittlig användare. Ett sådant förhållningssätt kallas för design för alla eller universell utformning. Det handlar inte bara om funktionsnedsättningar utan om hela den mångfald som präglar användarnas behov, förmågor och egenskaper. Ibland är särlösningar nödvändiga, men så långt som möjligt bör de ordinarie lösningarna fungera för alla. Det blir mer inkluderande och ofta billigare och bättre för alla.
+
+
+Webben ger stora möjligheter att tillhandahålla information och tjänster utan att diskriminera användare. Detta förutsätter dock att de utformas på ett korrekt sätt. Genom att väva in tillgänglighet i utvecklingsprocessen skapas förutsättningar för att så många som möjligt kan använda tjänster och information. Därmed bidrar tillgänglighet till ökad effektivitet för både den som tillhandahåller en tjänst och den som använder den. Det innebär bl.a. att man utgår från de grundläggande principerna i WCAG 2.0:
+
+
+* Möjlig att uppfatta – Information och komponenter i ett användargränssnitt måste presenteras för användare på sätt som de kan uppfatta.
+* Hanterbar – Komponenter i ett användargränssnitt och navigering måste vara hanterbara.
+* Begriplig – Information och hantering av användargränssnitt måste vara begripligt.
+* Robust – Innehåll måste vara robust nog för att kunna tolkas på ett pålitligt sätt av ett brett spektrum av olika användarprogram, inklusive hjälpmedel.
+
+
+Det finns många webbriktlinjer som handlar om tillgänglighet. Läs mer:
+* https://webbriktlinjer.se/principer/tillganglig/
