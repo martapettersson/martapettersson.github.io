@@ -6,7 +6,7 @@ body {
 }
 .wrapper {
 	@include flex(flex-start, column);
-	width: 1000px;
+	max-width: 1000px;
 	margin: 0px auto;
 }
 
@@ -23,6 +23,7 @@ footer {
 	color: $darkColor;
 	@include flex(space-between, row);
 	align-items: baseline;
+	flex-wrap: wrap;
 	ul {
 		font-weight: bold;
 		list-style-type: none;
@@ -33,21 +34,92 @@ footer {
 			margin-right: 10px;
 		}
 	}
+	h1,
+	h2 {
+		margin-left: 10px;
+	}
+}
+
+a:link,
+a:visited {
+	color: $darkColor;
+	text-decoration: none;
+	cursor: auto;
+}
+a:hover {
+	color: $lightColor;
 }
 
 .mainContent {
 	@include flex(center, row);
 	align-items: center;
-	height: 500px;
+	flex-wrap: wrap;
 }
 
 #textHome p {
-	width: 500px;
+	max-width: 500px;
 	height: 300px;
 }
-
+#picHome {
+	position: relative;
+	margin: 10px;
+}
 #picHome img {
-	width: 300px;
-	height: 300px;
+	max-width: 300px;
+	max-height: 300px;
 	border-radius: 100%;
+}
+
+.portfolioContent {
+	color: $thirdColor;
+}
+
+.educationContent {
+	@include flex(flex-start, column);
+	h1,
+	h2,
+	h4,
+	p {
+		margin-left: 10px;
+	}
+}
+
+@media all and (max-width: 600px) {
+	.mainContent {
+		@include flex(center, row);
+		align-items: center;
+		flex-wrap: wrap;
+		height: fit-content;
+	}
+
+	#textHome {
+		@include flex(center, column);
+		align-items: flex-start;
+		flex-wrap: wrap;
+		margin: 10px;
+	}
+
+	#textHome p,
+	h2 {
+		display: inline-block;
+		text-align: justify;
+		height: fit-content;
+	}
+
+	#picHome img {
+		max-width: 300px;
+		max-height: 300px;
+		border-radius: 100%;
+		width: 100%;
+		height: auto;
+	}
+	header,
+	footer {
+		ul {
+			li {
+				margin-left: 10px;
+				margin-right: 0px;
+			}
+		}
+	}
 }

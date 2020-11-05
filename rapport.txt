@@ -73,10 +73,16 @@ ________________
 
 
 Tillgänglighet
-Information och tjänster ska kunna användas av alla människor oavsett till exempel funktionsnedsättning (eller ”bredast möjliga spektrum av egenskaper och förmågor” som det står i definitionen av ”tillgänglighet” i ISO-standarden 26 800). 
+Tillgänglighet är ett begrepp som används för att beskriva hur pass väl en verksamhet, plats eller lokal fungerar för människor med funktionsnedsättning. Detta innefattar lokalers fysiska beskaffenhet, tillgången till information och ett bra bemötande.
 
 
-Begreppet tillgänglighet är centralt i Vägledningen för Webbutveckling - De officiella riktlinjerna för hur man bör arbeta med webbplatser i offentlig sektor. Det betyder bland annat att information och tjänster ska gå att nå; servern ska vara åtkomlig, filformatet läsbart, säkerheten god, prestandan acceptabel m.m. Vägledningens huvudfokus är den aspekt av tillgänglighet som har att göra med funktionshinder. Socialstyrelsen definierar funktionshinder som en ”begränsning som en funktionsnedsättning innebär för en person i relation till omgivningen”. Funktionshinder orsakas alltså av det glapp som kan finnas mellan individens förmågor och omgivningens krav. Funktionsnedsättningar kan vara tillfälliga eller bestående, men tillgänglighet kan ofta förhindra att en funktionsnedsättning medför funktionshinder. 
+Tillgänglighet på webben betecknar hur väl en webbplats fungerar för personer med funktionsnedsättning. Exempelvis använder personer med lässvårigheter, grava synskador eller som är blinda textbrowsers med uppläsningsfunktion. För att dessa ska kunna ta del av en bild måste den ha en beskrivande text, en så kallad ALT-text. Information och tjänster ska kunna användas av alla människor oavsett till exempel funktionsnedsättning (eller ”bredast möjliga spektrum av egenskaper och förmågor” som det står i definitionen av ”tillgänglighet” i ISO-standarden 26 800). 
+
+
+Tillgänglighet på webben standardiseras i riktlinjerna Web Content Accessibility Guidelines (WCAG), som har tagits fram av WAI (Web Accessibility Initiative) inom W3C (World Wide Web Consortium). I Sverige har WCAG först tolkats av myndigheten Verva i Vägledningen för 24-timmarswebben. Denna reglerade hur statliga myndigheter ska arbeta med tillgänglighet och fungerar också om rekommendation för hur alla offentliga webbplatser ska se ut och fungera. Vägledningen har sedan ersatts av webbriktlinjer.se (Vägledningen för Webbutveckling - De officiella riktlinjerna för hur man bör arbeta med webbplatser i offentlig sektor), ursprungligen framtagna av e-delegationen. Sedan 1 januari 2019 lagstadgas dessa av Förordning (2018:1938) om tillgänglighet till digital offentlig service, som utgör den svenska implementation av webbtillgänglighet direktivet inom EU. Ansvarig för webbriktlinjer.se, och tillsynsmyndighet för lagen, är DIGG. Dessa svenska riktlinjer och lagar hänvisar till standarden WCAG nivå AA.
+
+
+Begreppet tillgänglighet är centralt i Vägledningen för Webbutveckling. Det betyder bland annat att information och tjänster ska gå att nå; servern ska vara åtkomlig, filformatet läsbart, säkerheten god, prestandan acceptabel m.m. Vägledningens huvudfokus är den aspekt av tillgänglighet som har att göra med funktionshinder. Socialstyrelsen definierar funktionshinder som en ”begränsning som en funktionsnedsättning innebär för en person i relation till omgivningen”. Funktionshinder orsakas alltså av det glapp som kan finnas mellan individens förmågor och omgivningens krav. Funktionsnedsättningar kan vara tillfälliga eller bestående, men tillgänglighet kan ofta förhindra att en funktionsnedsättning medför funktionshinder. 
 
 
 Ett bra sätt att förhindra att funktionshinder uppstår är att utgå från den breda variation som finns mellan olika människors förmågor och egenskaper, snarare än att designa för en genomsnittlig användare. Ett sådant förhållningssätt kallas för design för alla eller universell utformning. Det handlar inte bara om funktionsnedsättningar utan om hela den mångfald som präglar användarnas behov, förmågor och egenskaper. Ibland är särlösningar nödvändiga, men så långt som möjligt bör de ordinarie lösningarna fungera för alla. Det blir mer inkluderande och ofta billigare och bättre för alla.
@@ -91,5 +97,4 @@ Webben ger stora möjligheter att tillhandahålla information och tjänster utan
 * Robust – Innehåll måste vara robust nog för att kunna tolkas på ett pålitligt sätt av ett brett spektrum av olika användarprogram, inklusive hjälpmedel.
 
 
-Det finns många webbriktlinjer som handlar om tillgänglighet. Läs mer:
-* https://webbriktlinjer.se/principer/tillganglig/
+Det finns många webbriktlinjer som handlar om tillgänglighet. Läs mer: https://webbriktlinjer.se/principer/tillganglig/
