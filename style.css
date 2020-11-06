@@ -1,3 +1,8 @@
+@font-face {
+  font-family: myHeadFont;
+  src: url(fonts/tomatoes/Tomatoes-O8L8.ttf);
+}
+
 body {
   margin: 0px;
 }
@@ -19,9 +24,17 @@ body {
 
 .baseStyle, header,
 footer {
-  font-family: "Poppins", sans-serif;
+  font-family: "Open Sans", sans-serif;
   background-color: #f8f1ff;
   color: #534d56;
+}
+
+.baseStyle h2, header h2, footer h2 {
+  margin: 0;
+}
+
+h1 {
+  font-family: myHeadFont;
 }
 
 header,
@@ -83,10 +96,12 @@ a:visited {
 }
 
 a:hover {
-  color: #f8f1ff;
+  color: #1b998b;
 }
 
 .mainContent {
+  padding-top: 20px;
+  padding-bottom: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -104,9 +119,24 @@ a:hover {
       flex-wrap: wrap;
 }
 
+#textHome {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 #textHome p {
   max-width: 500px;
-  height: 300px;
 }
 
 #picHome {
@@ -121,7 +151,38 @@ a:hover {
 }
 
 .portfolioContent {
-  color: #1b998b;
+  margin: 0 auto;
+  background-color: #656176;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  -ms-grid-rows: 3fr;
+      grid-template-rows: 3fr;
+}
+
+.portfolioContent .picPortfolio {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+}
+
+.portfolioContent .picPortfolio img {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+}
+
+.portfolioContent .textPortfolio {
+  -ms-grid-column: 3;
+      grid-column-start: 3;
+  grid-column-end: 5;
+  background-color: #f8f1ff;
+  padding: 10px;
+  margin-bottom: 5px;
+}
+
+.portfolioContent .textPortfolio p {
+  text-align: justify;
 }
 
 .educationContent {
@@ -142,6 +203,11 @@ a:hover {
 .educationContent h4,
 .educationContent p {
   margin-left: 10px;
+  margin-right: 10px;
+}
+
+.educationContent p {
+  text-align: justify;
 }
 
 @media all and (max-width: 600px) {
@@ -183,8 +249,7 @@ a:hover {
         flex-wrap: wrap;
     margin: 10px;
   }
-  #textHome p,
-  h2 {
+  #textHome p {
     display: inline-block;
     text-align: justify;
     height: -webkit-fit-content;
@@ -192,11 +257,12 @@ a:hover {
     height: fit-content;
   }
   #picHome img {
-    max-width: 300px;
-    max-height: 300px;
-    border-radius: 100%;
     width: 100%;
     height: auto;
+  }
+  header ul,
+  footer ul {
+    margin-right: 10px;
   }
   header ul li,
   footer ul li {
