@@ -62,6 +62,16 @@ footer {
 		padding: 20px;
 	}
 }
+.bx {
+	font-size: 30px;
+	color: $darkColor;
+	transition: text-shadow 0.4s linear;
+	transition: font-size 0.4s linear;
+}
+.bx:hover {
+	font-size: 35px;
+	text-shadow: 2px 2px $lightColor;
+}
 
 //ändra färg på länkar när man hovrar
 a:link,
@@ -69,9 +79,11 @@ a:visited {
 	color: $darkColor;
 	text-decoration: none;
 	cursor: auto;
+	transition: font-size 0.6s linear;
 }
 a:hover {
 	color: $thirdColor;
+	font-size: 120%;
 }
 
 // style på min huvudsida om mig med text och bild, använder flex här och sätter lite padding

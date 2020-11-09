@@ -92,15 +92,32 @@ footer h2 {
   padding: 20px;
 }
 
+.bx {
+  font-size: 30px;
+  color: #534d56;
+  -webkit-transition: text-shadow 0.4s linear;
+  transition: text-shadow 0.4s linear;
+  -webkit-transition: font-size 0.4s linear;
+  transition: font-size 0.4s linear;
+}
+
+.bx:hover {
+  font-size: 35px;
+  text-shadow: 2px 2px #f8f1ff;
+}
+
 a:link,
 a:visited {
   color: #534d56;
   text-decoration: none;
   cursor: auto;
+  -webkit-transition: font-size 0.6s linear;
+  transition: font-size 0.6s linear;
 }
 
 a:hover {
   color: #1b998b;
+  font-size: 120%;
 }
 
 .mainContent {
