@@ -110,3 +110,10 @@ Webben ger stora möjligheter att tillhandahålla information och tjänster utan
 Det finns många webbriktlinjer som handlar om tillgänglighet. Läs mer: https://webbriktlinjer.se/principer/tillganglig/
 För- och nackdelar med Tillgänglighet
 Tillgänglighet i sig är något som borde vara en självklarhet. Däremot kan det vara svårt i vissa lägen att prioritera tillgänglighet när det kommer till designval. Vissa utseenden på sidor/applikationer går tyvärr inte alltid i linje med den bästa tillgängligheten. Men som företag måste man ibland ta sådana beslut där looken måste gå före. Ta tex ett modemärke som vill ha en modern hemsida som känns i tiden. Om vi då säger att det är en trend just då att ha en nästan helt gömd meny - av någon anledning - så måste utvecklaren ta detta i hänsyn. Det är en trend och kunden efterfrågar trendigt. Då får dessvärre tillgängligheten sig en törn men förhoppningsvis kanske en kan jobba in tillgänglighet på något annat sätt. Det gäller att försöka vara kreativ, ha tillgänglighet i bakhuvudet och göra det bästa av situationen. Ofta handlar tillgänglighet om tydlighet och ibland går det inte hand i hand med en snygg design. Men ofta skulle jag själv säga att det är just det det gör. En massa beskrivande text som tar upp halva sidan kanske inte känns så lyxigt - men tydlighet, minimalism och enkelhet är något som ofta skapar en tilldragande design. Varför skulle inte tillgänglighet kunna vara något attraktivt? Det känns hur som helst inte så fräscht med en mystiskt “cool” design på bekostnad av diskriminering av människor.
+
+Tillgänglighetskrav som jag har implementerat i detta projekt:
+* 3.1.1: Ange sidans språk.
+* 1.4.10: Skapa en flexibel layout som fungerar vid förstoring eller liten skärm.
+* 1.4.3: Använd tillräcklig kontrast mellan text och bakgrund.
+* 2.4.2: Skriv beskrivande sidtitlar.
+* 2.4.4: Skriv tydliga länkar. 
