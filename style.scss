@@ -73,18 +73,16 @@ footer {
 	text-shadow: 2px 2px $lightColor;
 }
 
-//ändra färg och storlek på meny elementen på länkar när man hovrar
+//ändra färg meny elementen när man hovrar
 a:link,
 a:visited {
 	color: $darkColor;
 	text-decoration: none;
 	cursor: auto;
-	transition: font-size 0.4s linear;
+	transition: color 0.6s ease-in-out;
 }
 a:hover {
-	cursor: pointer;
 	color: $thirdColor;
-	font-size: 120%;
 }
 
 // style på min huvudsida om mig med text och bild, använder flex här och sätter lite padding
