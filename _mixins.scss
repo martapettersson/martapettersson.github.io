@@ -1,9 +1,10 @@
+//en funktion för flexande
 @mixin flex($justify, $direction) {
 	display: flex;
 	justify-content: $justify;
 	flex-direction: $direction;
 }
-
+//en funktion för resposivitet till bilderna
 @mixin responsive() {
 	width: 100%;
 	height: auto;

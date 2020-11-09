@@ -179,10 +179,9 @@ a:hover {
   grid-column-end: 5;
   background-color: #f8f1ff;
   padding: 10px;
-}
-
-.portfolioContent .textPortfolio p {
-  text-align: justify;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .educationContent {

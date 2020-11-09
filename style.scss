@@ -1,29 +1,37 @@
+// importerar mina variabler och mixins
 @import "./variables";
 @import "./mixins";
 
+// mitt special-font för mitt namn i headern
 @font-face {
 	font-family: myHeadFont;
 	src: url(fonts/tomatoes/Tomatoes-O8L8.ttf);
 }
 
+//nollställer marginaler
 body {
 	margin: 0px;
 }
+
+//stylar wrappern där header, main och footer ingår
 .wrapper {
 	@include flex(flex-start, column);
 	max-width: 1000px;
 	margin: 0px auto;
 }
 
+// sätter ett typsnitt och färg som får gälla för main
 .baseStyle {
 	font-family: $myFont;
 	background-color: $lightColor;
 	color: $darkColor;
 }
+//overridar med mitt special-font på mitt namn i headern
 h1 {
 	font-family: myHeadFont;
 }
 
+// lite styling för header och footer, använder flex här och sätter lite margin och padding
 header,
 footer {
 	@extend .baseStyle;
@@ -49,6 +57,7 @@ footer {
 	}
 }
 
+//ändra färg på länkar när man hovrar
 a:link,
 a:visited {
 	color: $darkColor;
@@ -59,6 +68,7 @@ a:hover {
 	color: $thirdColor;
 }
 
+// style på min huvudsida om mig med text och bild, använder flex här och sätter lite padding
 .mainContent {
 	padding-top: 20px;
 	padding-bottom: 20px;
@@ -66,6 +76,8 @@ a:hover {
 	align-items: center;
 	flex-wrap: wrap;
 }
+
+//flexar även div som innehåller p-tagen med om-texten
 #textHome {
 	display: flex;
 	flex-direction: column;
@@ -76,6 +88,7 @@ a:hover {
 	}
 }
 
+// bilden ska vara rund och relativ till texten
 #picHome {
 	position: relative;
 	margin: 10px;
@@ -86,6 +99,7 @@ a:hover {
 	}
 }
 
+// style på min portfoliosida med alla projekt, använder grid här
 .portfolioContent {
 	margin: 0 auto;
 	background-color: $secondColor;
@@ -93,26 +107,27 @@ a:hover {
 	grid-template-columns: 100px max-content repeat(2, 1fr) 100px;
 	grid-template-rows: 3fr;
 	grid-gap: 10px;
+	//definierar .portfolioContents grid-items kolumnspann
 	.picPortfolio {
 		grid-column-start: 2;
 		grid-column-end: 3;
+		//bilderna ska visas som block istället för inline och vara responsiva
 		img {
 			display: block;
 			max-width: 300px;
 			@include responsive();
 		}
 	}
+	//definierar .portfolioContents grid-items kolumnspann
 	.textPortfolio {
 		grid-column-start: 3;
 		grid-column-end: 5;
 		background-color: $lightColor;
 		padding: 10px;
-		p {
-			text-align: justify;
-		}
+		justify-content: center;
 	}
 }
-
+// style på min utbildningssida, använder flex här och sätter lite margin
 .educationContent {
 	@include flex(flex-start, column);
 	h1,
@@ -127,7 +142,9 @@ a:hover {
 	}
 }
 
+// mobilanpassad design
 @media all and (max-width: 600px) {
+	//flexar om till row istället för column
 	.mainContent {
 		@include flex(center, row);
 		align-items: center;
@@ -135,6 +152,7 @@ a:hover {
 		height: fit-content;
 	}
 
+	//texten ska vara i mitten
 	#textHome {
 		@include flex(center, column);
 		align-items: flex-start;
@@ -147,9 +165,12 @@ a:hover {
 		}
 	}
 
+	//bilden ska vara responsiv
 	#picHome img {
 		@include responsive();
 	}
+
+	//headern och footern behövde lite margin här för att rubrik och ul skulle va i linje
 	header,
 	footer {
 		ul {
@@ -165,6 +186,8 @@ a:hover {
 			padding: 10px;
 		}
 	}
+
+	//griden fick bli en kolumn med flera rader istället
 	.portfolioContent {
 		margin: 0 auto;
 		background-color: $secondColor;
@@ -192,6 +215,8 @@ a:hover {
 		}
 	}
 }
+
+// ett mellanläge för portfoliosidan såg så tokig ut när man förminskade sidan
 @media all and (max-width: 850px) {
 	.portfolioContent {
 		margin: 0 auto;
