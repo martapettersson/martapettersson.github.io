@@ -309,4 +309,39 @@ a:hover {
     text-align: justify;
   }
 }
+
+@media all and (max-width: 850px) {
+  .portfolioContent {
+    margin: 0 auto;
+    background-color: #656176;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 6fr;
+        grid-template-rows: 6fr;
+    grid-gap: 10px;
+  }
+  .portfolioContent .picPortfolio {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    margin: 0 auto;
+  }
+  .portfolioContent .picPortfolio img {
+    margin: 0 auto;
+    display: block;
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+  }
+  .portfolioContent .textPortfolio {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    background-color: #f8f1ff;
+    padding: 10px;
+  }
+  .portfolioContent .textPortfolio p {
+    text-align: justify;
+  }
+}
 /*# sourceMappingURL=style.css.map */

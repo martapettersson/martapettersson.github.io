@@ -192,3 +192,31 @@ a:hover {
 		}
 	}
 }
+@media all and (max-width: 850px) {
+	.portfolioContent {
+		margin: 0 auto;
+		background-color: $secondColor;
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 6fr;
+		grid-gap: 10px;
+		.picPortfolio {
+			grid-column-start: 1;
+			margin: 0 auto;
+			img {
+				margin: 0 auto;
+				display: block;
+				max-width: 300px;
+				@include responsive();
+			}
+		}
+		.textPortfolio {
+			grid-column-start: 1;
+			background-color: $lightColor;
+			padding: 10px;
+			p {
+				text-align: justify;
+			}
+		}
+	}
+}
