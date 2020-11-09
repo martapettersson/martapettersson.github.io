@@ -1,10 +1,10 @@
 ﻿Marta Pettersson
-2020-11-03
-Scrum
+2020-11-09
+SCRUM
 Scrum är ett av flera ramverk som implementerar det Agila tankesättet. Ramverket är lättviktigt och lättförståeligt. Arbetet är uppdelat i korta iterationer, s.k. Sprintar. Människorna inom ett Scrumteam är uppdelade i tre roller: Produktägare,Scrum Master och Utvecklingsteam. Genom ett antal definierade dokument kan Utvecklingsteamets arbete struktureras, kommuniceras och visualiseras i realtid. För att effektivisera processen, definierar Scrum de ceremonier och möten som behövs för att arbetet ska flyta på. 
 
 
-Scrum uppfanns under 1990-talet och är idag en etablerad metodik för systemutveckling som används över hela världen. En fördel med scrum är fokuseringen på affärsnytta och möjligheten att förändra projektet på ett strukturerat sätt. I scrum finns det inte en klassisk kravspecifikation utan man har istället en backlog. En backlog är kort sagt en prioriterad och levande lista med önskemål. Detta innebär att i ett projekt kan önskemål som är aktuella vid projektets start falla bort om de prioriteras ned under projektets gång och nya önskemål kan också läggas till.
+Scrum uppfanns under 1990-talet och är idag en etablerad metodik för systemutveckling som används över hela världen. En fördel med scrum är fokuseringen på affärsnytta och möjligheten att förändra projektet på ett strukturerat sätt. I scrum finns det inte en klassisk kravspecifikation utan en har istället en backlog. En backlog är kort sagt en prioriterad och levande lista med önskemål. Detta innebär att i ett projekt kan önskemål som är aktuella vid projektets start falla bort om de prioriteras ned under projektets gång och nya önskemål kan också läggas till.
 
 
 Just ordet "scrum" är en term från sporten rugby, och är den täta axel mot axel-formation teamet använder för att föra bollen framåt när den sätts i spel. De japanska forskarna Hirotaka Takeuchi och Ikujiro Nonaka myntade uttrycket och tyckte rugby var en bra liknelse eftersom ett tvärfunktionellt team samarbetar för att göra klart produkten på samma sätt som ett rugbylag spelar tillsammans för att föra bollen uppför planen. Scrum skapades ursprungligen av Jeff Sutherland och Ken Schwaber.
@@ -14,7 +14,7 @@ Produktägaren sammanställer och prioriterar önskemål om tillägg och ändrin
 Scrum master:
 Scrum mastern coachar teamet och ser till att allt rullar på smidigt. Scrum mastern stämmer av mellan aktörer samt ser till att det inte finns några hinder för teamet.
 Team:
-Teamet är självorganiserande och bestämmer gemensamt vem som gör vad och hur man löser olika uppgifter.
+Teamet är självorganiserande och bestämmer gemensamt vem som gör vad och hur en löser olika uppgifter.
 Vilka komponenter finns inom scrum?
 Backlog (Product backlog)
 En prioriterad lista med alla önskemål om produkten. Produktägaren prioriterar och ansvarar för backlogen. En backlog skrivs ofta i form av user stories men kan även vara organiserad på andra sätt. Genom att jämföra de tidsestimerade och prioriterade önskemålen med tillgänglig tid tas en sprint backlog fram som teamet åtar sig att genomföra.
@@ -46,8 +46,15 @@ Team, scrum master och produktägare går tillsammans igenom erfarenheter från 
 
 Sprint planning
 Produktägaren, scrum master och teamet går igenom de önskemål som finns. Därefter bryter teamet ned kraven och tidsestimerar (ofta med planning poker och ibland med story points istället för timmar).
+För- och nackdelar med SCRUM
+Värt att nämna är att SCRUM kanske inte passar varenda projekt men det fungerar för det mesta bra när det kommer till webbutveckling på en lite större skala. Det är svårt att identifiera nackdelar med SCRUM eftersom arbetsmetoden är så pass holistisk, strukturerad och involverande av alla inblandade intressenter. Ständig uppföljning i form av sprintgenomgångar under arbetets gång förebygger mot merarbete, och återblickarna ger möjlighet till kontemplation och förbättring. Daily scrums stärker arbetsteamets kommunikation, eliminerar andra möten, identifierar snabbt hinder som då snabbt kan tas tag i, markerar och främjar snabbt beslutsfattande och förbättrar teamets kunskapsnivå.
+
+
+Däremot är det vanligt att ett arbetsteam som aldrig någonsin jobbat i SCRUM upplever metoden som något avancerad och därav till och med avskräckande. Det kan vara mycket att smälta och sätta säga in i, nya termer och koncept mm. Men de flesta som fått pröva på att arbeta på detta sätt vittnar om en positiv upplevelse av metoden. 
 ________________
-Grafisk profil
+
+
+GRAFISK PROFIL
 Vad är en grafisk profil?
 Grafisk profil är en typ av manual/instruktion för hur ett företags/organisations 
 * logotyp,
@@ -58,10 +65,10 @@ Grafisk profil är en typ av manual/instruktion för hur ett företags/organisat
 
 Syftet är att kunna kommunicera enhetligt för att bygga ett starkt varumärke. Genom att vara konsekvent med designen så blir det tydligt för mottagaren vem kommunikationen kommer ifrån och det skapar igenkänning.
 Att göra en grafisk profil
-Profilen kan sammanställas i ett dokument eller liknande för att ha som utgångspunkt när man skapar bilder, reklamkampanjer, affischer, bloggheader, hemsidedesign, visitkort m.m. Vissa företag har också sin grafiska profil på sin hemsida med nedladdningsbara logotyper, färger, m.m. för att underlätta för kunder eller liknande som ska jobba med profilen.
+Profilen kan sammanställas i ett dokument eller liknande för att ha som utgångspunkt när en skapar bilder, reklamkampanjer, affischer, bloggheader, hemsidedesign, visitkort m.m. Vissa företag har också sin grafiska profil på sin hemsida med nedladdningsbara logotyper, färger, m.m. för att underlätta för kunder eller liknande som ska jobba med profilen.
 
 
-Generellt kan man säga att en grafisk profil bör innehålla:
+Generellt kan en säga att en grafisk profil bör innehålla:
 * En logotyp, gärna i några olika utföranden så den kan anpassas efter olika användningsområden.
 * En eller flera färger
 * Ett eller två typsnitt
@@ -69,17 +76,20 @@ Generellt kan man säga att en grafisk profil bör innehålla:
 
 
 Viktigt att tänka på: vad ska kommuniceras och till vem? Vad kan alla olika element i en grafiska profil skapa för associationer hos den som ser den digitala kommunikationen? Alla tolkar inte saker på samma sätt – så det är viktigt att tänka igenom konnotationer, symbolik, färgassociationer osv. 
+För- och nackdelar med Grafisk profil
+En grafisk profil i sig bidrar med tydlighet både för mottagare och kommunikatör, och konsekvent kommunikation skapar igenkänning. Det är dock viktigt att verkligen tänka igenom sin grafiska profil. Representerar den verkligen det du vill kommunicera? Kan det en själv tolkar på ett visst sätt tolkas på ett helt annat sätt av en annan person? Tex fick rosa flamingos som trädgårdsprydnad ett uppsving för ett par år sen. Det alla som köpte dessa kanske inte tänkte på då är att en rosa flamingo är en hemlig symbol för swingers att “här bor swingers, välkommen in”. Det finns många kommunikationsmissar en kan råka begå, däremot ska detta såklart inte avskräcka en helt från att skapa en grafisk profil för det. Vill en som icke-swinger ha en rosa flamingo som sin symbol i företaget - låt så va då! En kanske bara tycker det är fint.
+Det är på många sätt lättare att snabbt jobba fram en lämplig webbdesign när det finns en utförlig grafisk profil att följa, eftersom en då vet hur kommunikationen ska se ut utåt. Kort sagt slipper du som webbdesigner identifiera och fatta en rad beslut kring kundens visuella identitet, och får mer tid att fokusera på att utveckla en fungerande produkt. Pappret är inte blankt, vilket ibland kan främja kreativitet. Däremot kan regler även hämma kreativitet och hindra idéer att flöda fritt. Ibland kanske en “bättre” design finns runt hörnet men en tillåts inte utforska det iom att en måste följa den grafiska profilen. 
 ________________
 
 
-Tillgänglighet
+TILLGÄNGLIGHET
 Tillgänglighet är ett begrepp som används för att beskriva hur pass väl en verksamhet, plats eller lokal fungerar för människor med funktionsnedsättning. Detta innefattar lokalers fysiska beskaffenhet, tillgången till information och ett bra bemötande.
 
 
 Tillgänglighet på webben betecknar hur väl en webbplats fungerar för personer med funktionsnedsättning. Exempelvis använder personer med lässvårigheter, grava synskador eller som är blinda textbrowsers med uppläsningsfunktion. För att dessa ska kunna ta del av en bild måste den ha en beskrivande text, en så kallad ALT-text. Information och tjänster ska kunna användas av alla människor oavsett till exempel funktionsnedsättning (eller ”bredast möjliga spektrum av egenskaper och förmågor” som det står i definitionen av ”tillgänglighet” i ISO-standarden 26 800). 
 
 
-Tillgänglighet på webben standardiseras i riktlinjerna Web Content Accessibility Guidelines (WCAG), som har tagits fram av WAI (Web Accessibility Initiative) inom W3C (World Wide Web Consortium). I Sverige har WCAG först tolkats av myndigheten Verva i Vägledningen för 24-timmarswebben. Denna reglerade hur statliga myndigheter ska arbeta med tillgänglighet och fungerar också om rekommendation för hur alla offentliga webbplatser ska se ut och fungera. Vägledningen har sedan ersatts av webbriktlinjer.se (Vägledningen för Webbutveckling - De officiella riktlinjerna för hur man bör arbeta med webbplatser i offentlig sektor), ursprungligen framtagna av e-delegationen. Sedan 1 januari 2019 lagstadgas dessa av Förordning (2018:1938) om tillgänglighet till digital offentlig service, som utgör den svenska implementation av webbtillgänglighet direktivet inom EU. Ansvarig för webbriktlinjer.se, och tillsynsmyndighet för lagen, är DIGG. Dessa svenska riktlinjer och lagar hänvisar till standarden WCAG nivå AA.
+Tillgänglighet på webben standardiseras i riktlinjerna Web Content Accessibility Guidelines (WCAG), som har tagits fram av WAI (Web Accessibility Initiative) inom W3C (World Wide Web Consortium). I Sverige har WCAG först tolkats av myndigheten Verva i Vägledningen för 24-timmarswebben. Denna reglerade hur statliga myndigheter ska arbeta med tillgänglighet och fungerar också om rekommendation för hur alla offentliga webbplatser ska se ut och fungera. Vägledningen har sedan ersatts av webbriktlinjer.se (Vägledningen för Webbutveckling - De officiella riktlinjerna för hur en bör arbeta med webbplatser i offentlig sektor), ursprungligen framtagna av e-delegationen. Sedan 1 januari 2019 lagstadgas dessa av Förordning (2018:1938) om tillgänglighet till digital offentlig service, som utgör den svenska implementation av webbtillgänglighet direktivet inom EU. Ansvarig för webbriktlinjer.se, och tillsynsmyndighet för lagen, är DIGG. Dessa svenska riktlinjer och lagar hänvisar till standarden WCAG nivå AA.
 
 
 Begreppet tillgänglighet är centralt i Vägledningen för Webbutveckling. Det betyder bland annat att information och tjänster ska gå att nå; servern ska vara åtkomlig, filformatet läsbart, säkerheten god, prestandan acceptabel m.m. Vägledningens huvudfokus är den aspekt av tillgänglighet som har att göra med funktionshinder. Socialstyrelsen definierar funktionshinder som en ”begränsning som en funktionsnedsättning innebär för en person i relation till omgivningen”. Funktionshinder orsakas alltså av det glapp som kan finnas mellan individens förmågor och omgivningens krav. Funktionsnedsättningar kan vara tillfälliga eller bestående, men tillgänglighet kan ofta förhindra att en funktionsnedsättning medför funktionshinder. 
@@ -88,7 +98,7 @@ Begreppet tillgänglighet är centralt i Vägledningen för Webbutveckling. Det 
 Ett bra sätt att förhindra att funktionshinder uppstår är att utgå från den breda variation som finns mellan olika människors förmågor och egenskaper, snarare än att designa för en genomsnittlig användare. Ett sådant förhållningssätt kallas för design för alla eller universell utformning. Det handlar inte bara om funktionsnedsättningar utan om hela den mångfald som präglar användarnas behov, förmågor och egenskaper. Ibland är särlösningar nödvändiga, men så långt som möjligt bör de ordinarie lösningarna fungera för alla. Det blir mer inkluderande och ofta billigare och bättre för alla.
 
 
-Webben ger stora möjligheter att tillhandahålla information och tjänster utan att diskriminera användare. Detta förutsätter dock att de utformas på ett korrekt sätt. Genom att väva in tillgänglighet i utvecklingsprocessen skapas förutsättningar för att så många som möjligt kan använda tjänster och information. Därmed bidrar tillgänglighet till ökad effektivitet för både den som tillhandahåller en tjänst och den som använder den. Det innebär bl.a. att man utgår från de grundläggande principerna i WCAG 2.0:
+Webben ger stora möjligheter att tillhandahålla information och tjänster utan att diskriminera användare. Detta förutsätter dock att de utformas på ett korrekt sätt. Genom att väva in tillgänglighet i utvecklingsprocessen skapas förutsättningar för att så många som möjligt kan använda tjänster och information. Därmed bidrar tillgänglighet till ökad effektivitet för både den som tillhandahåller en tjänst och den som använder den. Det innebär bl.a. att en utgår från de grundläggande principerna i WCAG 2.0:
 
 
 * Möjlig att uppfatta – Information och komponenter i ett användargränssnitt måste presenteras för användare på sätt som de kan uppfatta.
@@ -98,3 +108,5 @@ Webben ger stora möjligheter att tillhandahålla information och tjänster utan
 
 
 Det finns många webbriktlinjer som handlar om tillgänglighet. Läs mer: https://webbriktlinjer.se/principer/tillganglig/
+För- och nackdelar med Tillgänglighet
+Tillgänglighet i sig är något som borde vara en självklarhet. Däremot kan det vara svårt i vissa lägen att prioritera tillgänglighet när det kommer till designval. Vissa utseenden på sidor/applikationer går tyvärr inte alltid i linje med den bästa tillgängligheten. Men som företag måste man ibland ta sådana beslut där looken måste gå före. Ta tex ett modemärke som vill ha en modern hemsida som känns i tiden. Om vi då säger att det är en trend just då att ha en nästan helt gömd meny - av någon anledning - så måste utvecklaren ta detta i hänsyn. Det är en trend och kunden efterfrågar trendigt. Då får dessvärre tillgängligheten sig en törn men förhoppningsvis kanske en kan jobba in tillgänglighet på något annat sätt. Det gäller att försöka vara kreativ, ha tillgänglighet i bakhuvudet och göra det bästa av situationen. Ofta handlar tillgänglighet om tydlighet och ibland går det inte hand i hand med en snygg design. Men ofta skulle jag själv säga att det är just det det gör. En massa beskrivande text som tar upp halva sidan kanske inte känns så lyxigt - men tydlighet, minimalism och enkelhet är något som ofta skapar en tilldragande design. Varför skulle inte tillgänglighet kunna vara något attraktivt? Det känns hur som helst inte så fräscht med en mystiskt “cool” design på bekostnad av diskriminering av människor.
