@@ -1,3 +1,9 @@
+*,
+::before,
+::after {
+	box-sizing: border-box;
+}
+
 // importerar mina variabler och mixins
 @import "./variables";
 @import "./mixins";
@@ -96,7 +102,19 @@ a:hover {
 		max-width: 300px;
 		max-height: 300px;
 		border-radius: 100%;
+		margin: 0 auto;
+		display: block;
 	}
+}
+
+//en animation av border runt bilden av mig på Hem
+.border-pic {
+	border: solid 5px $mainColor;
+	border-radius: 100%;
+	transition: border-width 0.6s linear;
+}
+.border-pic:hover {
+	border-width: 15px;
 }
 
 // style på min portfoliosida med alla projekt, använder grid här
