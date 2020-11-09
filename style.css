@@ -157,10 +157,10 @@ a:hover {
       grid-template-columns: 100px max-content repeat(2, 1fr) 100px;
   -ms-grid-rows: 3fr;
       grid-template-rows: 3fr;
+  grid-gap: 10px;
 }
 
 .portfolioContent .picPortfolio {
-  margin-top: 10px;
   -ms-grid-column: 2;
       grid-column-start: 2;
   grid-column-end: 3;
@@ -179,7 +179,6 @@ a:hover {
   grid-column-end: 5;
   background-color: #f8f1ff;
   padding: 10px;
-  margin-top: 10px;
 }
 
 .portfolioContent .textPortfolio p {
@@ -269,6 +268,45 @@ a:hover {
   footer ul li {
     margin-left: 10px;
     margin-right: 0px;
+  }
+  header h1,
+  header h2,
+  footer h1,
+  footer h2 {
+    margin-left: 0px;
+    padding: 10px;
+  }
+  .portfolioContent {
+    margin: 0 auto;
+    background-color: #656176;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 6fr;
+        grid-template-rows: 6fr;
+    grid-gap: 10px;
+  }
+  .portfolioContent .picPortfolio {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    margin: 0 auto;
+  }
+  .portfolioContent .picPortfolio img {
+    margin: 0 auto;
+    display: block;
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+  }
+  .portfolioContent .textPortfolio {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    background-color: #f8f1ff;
+    padding: 10px;
+  }
+  .portfolioContent .textPortfolio p {
+    text-align: justify;
   }
 }
 /*# sourceMappingURL=style.css.map */

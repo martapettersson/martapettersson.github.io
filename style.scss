@@ -92,8 +92,8 @@ a:hover {
 	display: grid;
 	grid-template-columns: 100px max-content repeat(2, 1fr) 100px;
 	grid-template-rows: 3fr;
+	grid-gap: 10px;
 	.picPortfolio {
-		margin-top: 10px;
 		grid-column-start: 2;
 		grid-column-end: 3;
 		img {
@@ -107,7 +107,6 @@ a:hover {
 		grid-column-end: 5;
 		background-color: $lightColor;
 		padding: 10px;
-		margin-top: 10px;
 		p {
 			text-align: justify;
 		}
@@ -158,6 +157,37 @@ a:hover {
 			li {
 				margin-left: 10px;
 				margin-right: 0px;
+			}
+		}
+		h1,
+		h2 {
+			margin-left: 0px;
+			padding: 10px;
+		}
+	}
+	.portfolioContent {
+		margin: 0 auto;
+		background-color: $secondColor;
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 6fr;
+		grid-gap: 10px;
+		.picPortfolio {
+			grid-column-start: 1;
+			margin: 0 auto;
+			img {
+				margin: 0 auto;
+				display: block;
+				max-width: 300px;
+				@include responsive();
+			}
+		}
+		.textPortfolio {
+			grid-column-start: 1;
+			background-color: $lightColor;
+			padding: 10px;
+			p {
+				text-align: justify;
 			}
 		}
 	}
