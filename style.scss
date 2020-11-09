@@ -73,15 +73,16 @@ footer {
 	text-shadow: 2px 2px $lightColor;
 }
 
-//ändra färg på länkar när man hovrar
+//ändra färg och storlek på meny elementen på länkar när man hovrar
 a:link,
 a:visited {
 	color: $darkColor;
 	text-decoration: none;
 	cursor: auto;
-	transition: font-size 0.6s linear;
+	transition: font-size 0.4s linear;
 }
 a:hover {
+	cursor: pointer;
 	color: $thirdColor;
 	font-size: 120%;
 }
