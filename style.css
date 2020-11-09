@@ -29,10 +29,6 @@ footer {
   color: #534d56;
 }
 
-.baseStyle h2, header h2, footer h2 {
-  margin: 0;
-}
-
 h1 {
   font-family: myHeadFont;
 }
@@ -86,6 +82,7 @@ header h2,
 footer h1,
 footer h2 {
   margin-left: 10px;
+  padding: 20px;
 }
 
 a:link,
@@ -155,18 +152,22 @@ a:hover {
   background-color: #656176;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[5];
-      grid-template-columns: repeat(5, 1fr);
+  -ms-grid-columns: 100px max-content (1fr)[2] 100px;
+      grid-template-columns: 100px -webkit-max-content repeat(2, 1fr) 100px;
+      grid-template-columns: 100px max-content repeat(2, 1fr) 100px;
   -ms-grid-rows: 3fr;
       grid-template-rows: 3fr;
 }
 
 .portfolioContent .picPortfolio {
+  margin-top: 10px;
   -ms-grid-column: 2;
       grid-column-start: 2;
+  grid-column-end: 3;
 }
 
 .portfolioContent .picPortfolio img {
+  display: block;
   max-width: 300px;
   width: 100%;
   height: auto;
@@ -178,7 +179,7 @@ a:hover {
   grid-column-end: 5;
   background-color: #f8f1ff;
   padding: 10px;
-  margin-bottom: 5px;
+  margin-top: 10px;
 }
 
 .portfolioContent .textPortfolio p {

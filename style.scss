@@ -19,9 +19,6 @@ body {
 	font-family: $myFont;
 	background-color: $lightColor;
 	color: $darkColor;
-	h2 {
-		margin: 0;
-	}
 }
 h1 {
 	font-family: myHeadFont;
@@ -48,6 +45,7 @@ footer {
 	h1,
 	h2 {
 		margin-left: 10px;
+		padding: 20px;
 	}
 }
 
@@ -73,30 +71,33 @@ a:hover {
 	flex-direction: column;
 	align-items: flex-start;
 	justify-content: center;
+	p {
+		max-width: 500px;
+	}
 }
 
-#textHome p {
-	max-width: 500px;
-}
 #picHome {
 	position: relative;
 	margin: 10px;
-}
-#picHome img {
-	max-width: 300px;
-	max-height: 300px;
-	border-radius: 100%;
+	img {
+		max-width: 300px;
+		max-height: 300px;
+		border-radius: 100%;
+	}
 }
 
 .portfolioContent {
 	margin: 0 auto;
 	background-color: $secondColor;
 	display: grid;
-	grid-template-columns: repeat(5, 1fr);
+	grid-template-columns: 100px max-content repeat(2, 1fr) 100px;
 	grid-template-rows: 3fr;
 	.picPortfolio {
+		margin-top: 10px;
 		grid-column-start: 2;
+		grid-column-end: 3;
 		img {
+			display: block;
 			max-width: 300px;
 			@include responsive();
 		}
@@ -106,7 +107,7 @@ a:hover {
 		grid-column-end: 5;
 		background-color: $lightColor;
 		padding: 10px;
-		margin-bottom: 5px;
+		margin-top: 10px;
 		p {
 			text-align: justify;
 		}
@@ -140,12 +141,11 @@ a:hover {
 		align-items: flex-start;
 		flex-wrap: wrap;
 		margin: 10px;
-	}
-
-	#textHome p {
-		display: inline-block;
-		text-align: justify;
-		height: fit-content;
+		p {
+			display: inline-block;
+			text-align: justify;
+			height: fit-content;
+		}
 	}
 
 	#picHome img {
