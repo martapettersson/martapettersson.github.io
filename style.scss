@@ -2,6 +2,8 @@
 ::before,
 ::after {
 	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
 }
 
 // importerar mina variabler och mixins
@@ -10,7 +12,7 @@
 
 // mitt special-font för mitt namn i headern
 @font-face {
-	font-family: myHeadFont;
+	font-family: myHighlightFont;
 	src: url(fonts/tomatoes/Tomatoes-O8L8.ttf);
 }
 
@@ -32,14 +34,11 @@ body {
 	background-color: $lightColor;
 	color: $darkColor;
 }
-//overridar med mitt special-font på mitt namn i headern
-h1 {
-	font-family: myHeadFont;
-}
+
 #highLight {
 	font-size: 120%;
 	color: $thirdColor;
-	font-family: myHeadFont;
+	font-family: myHighlightFont;
 }
 
 // lite styling för header och footer, meny och ikoner
@@ -68,13 +67,13 @@ footer {
 	}
 }
 //animation av ikoner när man hovrar, storlek och skugga på texten
-.bx {
+.myIcons {
 	font-size: 30px;
 	color: $darkColor;
 	transition: text-shadow 0.4s linear;
 	transition: font-size 0.4s linear;
 }
-.bx:hover {
+.myIcons:hover {
 	font-size: 35px;
 	text-shadow: 2px 2px $lightColor;
 }
@@ -85,7 +84,7 @@ a:visited {
 	color: $darkColor;
 	text-decoration: none;
 	cursor: auto;
-	transition: color 0.6s ease-in-out;
+	transition: color 0.4s ease-in-out;
 }
 a:hover {
 	color: $thirdColor;
@@ -132,6 +131,41 @@ a:hover {
 }
 .border-pic:hover {
 	border-width: 15px;
+}
+
+/* -----------OM MIG-----------*/
+
+.aboutMe {
+	display: grid;
+	grid-template-areas:
+		"aboutMeText aboutMeText contactContainer"
+		"aboutMeText aboutMeText contactContainer"
+		"aboutMeText aboutMeText contactContainer"
+		"musicContainer musicContainer contactContainer";
+	grid-gap: 10px 20px;
+	padding: 20px;
+	h2 {
+		font-family: myHighlightFont;
+	}
+
+	#aboutMeText {
+		@include niceBox();
+		grid-area: aboutMeText;
+	}
+	#contactContainer {
+		@include niceBox();
+		grid-area: contactContainer;
+		ul {
+			list-style-type: none;
+			line-height: 200%;
+			margin: 0;
+			padding: 0;
+		}
+	}
+	#musicContainer {
+		@include niceBox();
+		grid-area: musicContainer;
+	}
 }
 
 // style på min portfoliosida med alla projekt, använder grid här
@@ -205,7 +239,7 @@ a:hover {
 			flex-wrap: wrap;
 			margin-right: 10px;
 			li {
-				margin-left: 10px;
+				margin-left: 15px;
 				margin-right: 0px;
 			}
 		}

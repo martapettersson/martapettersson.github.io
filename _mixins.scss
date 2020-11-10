@@ -9,3 +9,11 @@
 	width: 100%;
 	height: auto;
 }
+
+// en funktion för fina boxar
+@mixin niceBox() {
+	@include flex(flex-start, column);
+	border-radius: 25px;
+	border: 2px solid $secondColor;
+	background-color: $mainColor;
+}

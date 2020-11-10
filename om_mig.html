@@ -19,9 +19,8 @@
 	<body>
 		<!-- i wrapper ingår header, main och footer-->
 		<div class="wrapper">
-			<!-- mitt namn som rubrik och en nav -->
 			<header>
-				<h1>Marta Pettersson</h1>
+				<!-- min meny -->
 				<nav>
 					<ul>
 						<li><a href="index.html">Hem</a></li>
@@ -36,8 +35,8 @@
 				</nav>
 			</header>
 			<!-- en kort text om mig och en bild på mig -->
-			<div class="baseStyle mainContent">
-				<div class="baseStyle" id="textHome">
+			<div class="baseStyle aboutMe">
+				<div class="baseStyle aboutMe" id="aboutMeText">
 					<h2>Om mig</h2>
 					<p>
 						Jag är en musiker och musikproducent som just nu svidar om till
@@ -54,19 +53,52 @@
 						starkt team.
 					</p>
 				</div>
-				<div id="picHome" class="border-pic">
-					<img src="/img/marta_pic.jpg" alt="Bild på Marta Pettersson" />
+				<div class="baseStyle aboutMe" id="contactContainer">
+					<h2>Kontakt</h2>
+					<ul>
+						<li>
+							<i aria-label="Email" class="bx bx-mail-send"></i>
+							marta.pettersson@gmail.com
+						</li>
+						<li>
+							<i aria-label="Telefonnummer" class="bx bxs-phone"></i>+46 73 02
+							88 223
+						</li>
+						<li>
+							<i aria-label="Martas Linkedin-sida" class="bx bxl-linkedin"></i>
+							<a
+								target="_blank"
+								href="https://www.linkedin.com/in/marta-pettersson-80a8b31b9/"
+								>Min Linkedin</a
+							>
+						</li>
+						<li>
+							<i aria-label="Martas Github-sida" class="bx bxl-github"></i>
+							<a target="_blank" href="https://github.com/martapettersson"
+								>Min Github</a
+							>
+						</li>
+					</ul>
+				</div>
+				<div class="baseStyle aboutMe" id="musicContainer">
+					<h2>Min Musik</h2>
+					<p>
+						Tillsammans med Erika Ahlström har jag ett band som heter I Am
+						Karate. Klicka här för att lyssna på oss:
+						<a target="_blank" href="https://soundcloud.com/i-am-karate"
+							><strong>I Am Karate</strong></a
+						>
+					</p>
 				</div>
 			</div>
 			<!-- min email och länkar till linkedin mm -->
 			<footer>
-				<h2>Kontakt</h2>
 				<ul>
 					<li>
 						<a href="mailto:marta.pettersson@gmail.com" target="_blank"
 							><i
 								aria-label="Skicka ett mail till Marta"
-								class="bx bx-mail-send"
+								class="bx bx-mail-send myIcons"
 							></i
 						></a>
 					</li>
@@ -77,7 +109,7 @@
 							target="_blank"
 							><i
 								aria-label="Öppna ny tab för Martas Linkedin-sida"
-								class="bx bxl-linkedin"
+								class="bx bxl-linkedin myIcons"
 							></i
 						></a>
 					</li>
@@ -85,7 +117,7 @@
 						<a href="https://github.com/martapettersson" target="_blank"
 							><i
 								aria-label="Öppna ny tab för Martas Github-sida"
-								class="bx bxl-github"
+								class="bx bxl-github myIcons"
 							></i
 						></a>
 					</li>
@@ -93,7 +125,7 @@
 						<a href="https://soundcloud.com/i-am-karate" target="_blank"
 							><i
 								aria-label="Öppna ny tab för Martas musik"
-								class="bx bxs-music"
+								class="bx bxs-music myIcons"
 							></i
 						></a>
 					</li>

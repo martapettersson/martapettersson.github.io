@@ -3,10 +3,12 @@
 ::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
 }
 
 @font-face {
-  font-family: myHeadFont;
+  font-family: myHighlightFont;
   src: url(fonts/tomatoes/Tomatoes-O8L8.ttf);
 }
 
@@ -36,14 +38,10 @@ footer {
   color: #534d56;
 }
 
-h1 {
-  font-family: myHeadFont;
-}
-
 #highLight {
   font-size: 120%;
   color: #1b998b;
-  font-family: myHeadFont;
+  font-family: myHighlightFont;
 }
 
 header,
@@ -96,7 +94,7 @@ footer ul li {
   margin-right: 15px;
 }
 
-.bx {
+.myIcons {
   font-size: 30px;
   color: #534d56;
   -webkit-transition: text-shadow 0.4s linear;
@@ -105,7 +103,7 @@ footer ul li {
   transition: font-size 0.4s linear;
 }
 
-.bx:hover {
+.myIcons:hover {
   font-size: 35px;
   text-shadow: 2px 2px #f8f1ff;
 }
@@ -115,8 +113,8 @@ a:visited {
   color: #534d56;
   text-decoration: none;
   cursor: auto;
-  -webkit-transition: color 0.6s ease-in-out;
-  transition: color 0.6s ease-in-out;
+  -webkit-transition: color 0.4s ease-in-out;
+  transition: color 0.4s ease-in-out;
 }
 
 a:hover {
@@ -185,6 +183,87 @@ a:hover {
 
 .border-pic:hover {
   border-width: 15px;
+}
+
+/* -----------OM MIG-----------*/
+.aboutMe {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "aboutMeText aboutMeText contactContainer" "aboutMeText aboutMeText contactContainer" "aboutMeText aboutMeText contactContainer" "musicContainer musicContainer contactContainer";
+  grid-gap: 10px 20px;
+  padding: 20px;
+}
+
+.aboutMe h2 {
+  font-family: myHighlightFont;
+}
+
+.aboutMe #aboutMeText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 25px;
+  border: 2px solid #656176;
+  background-color: #decdf5;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: aboutMeText;
+}
+
+.aboutMe #contactContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 25px;
+  border: 2px solid #656176;
+  background-color: #decdf5;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 4;
+  -ms-grid-column: 3;
+  grid-area: contactContainer;
+}
+
+.aboutMe #contactContainer ul {
+  list-style-type: none;
+  line-height: 200%;
+  margin: 0;
+  padding: 0;
+}
+
+.aboutMe #musicContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 25px;
+  border: 2px solid #656176;
+  background-color: #decdf5;
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: musicContainer;
 }
 
 .portfolioContent {
@@ -301,7 +380,7 @@ a:hover {
   }
   header ul li,
   footer ul li {
-    margin-left: 10px;
+    margin-left: 15px;
     margin-right: 0px;
   }
   .portfolioContent {
