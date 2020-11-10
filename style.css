@@ -12,10 +12,6 @@
   src: url(fonts/tomatoes/Tomatoes-O8L8.ttf);
 }
 
-body {
-  margin: 0px;
-}
-
 .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -414,6 +410,16 @@ a:hover {
   }
   .portfolioContent .textPortfolio p {
     text-align: justify;
+  }
+  .aboutMe {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "aboutMeText" "aboutMeText" "contactContainer" "musicContainer";
+    grid-gap: 10px 20px;
+    padding: 20px;
+  }
+  .aboutMe h2 {
+    font-family: myHighlightFont;
   }
 }
 /*# sourceMappingURL=style.css.map */

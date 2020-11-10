@@ -1,3 +1,4 @@
+//nollställer och fixar så sidan funkar med border-box
 *,
 ::before,
 ::after {
@@ -10,15 +11,10 @@
 @import "./variables";
 @import "./mixins";
 
-// mitt special-font för mitt namn i headern
+// mitt special-font
 @font-face {
 	font-family: myHighlightFont;
 	src: url(fonts/tomatoes/Tomatoes-O8L8.ttf);
-}
-
-//nollställer marginaler
-body {
-	margin: 0px;
 }
 
 //stylar wrappern där header, main och footer ingår
@@ -270,6 +266,20 @@ a:hover {
 			p {
 				text-align: justify;
 			}
+		}
+	}
+
+	.aboutMe {
+		display: grid;
+		grid-template-areas:
+			"aboutMeText"
+			"aboutMeText"
+			"contactContainer"
+			"musicContainer";
+		grid-gap: 10px 20px;
+		padding: 20px;
+		h2 {
+			font-family: myHighlightFont;
 		}
 	}
 }
