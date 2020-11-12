@@ -1,4 +1,3 @@
-@charset "UTF-8";
 *,
 ::before,
 ::after {
@@ -30,7 +29,7 @@
 }
 
 .baseStyle, header,
-footer {
+footer, .mainContent, .aboutMe, .portfolio, .educationContent {
   font-family: "Open Sans", sans-serif;
   background-color: #f8f1ff;
   color: #534d56;
@@ -42,6 +41,7 @@ footer {
   font-family: myHighlightFont;
 }
 
+/* --------------HEADER & FOOTER----------------*/
 header,
 footer {
   font-size: 130%;
@@ -89,7 +89,7 @@ footer ul {
 
 header ul li,
 footer ul li {
-  margin-right: 15px;
+  margin-left: 15px;
 }
 
 .myIcons {
@@ -209,6 +209,7 @@ a:focus {
   border-radius: 25px;
   border: 2px solid #656176;
   background-color: #decdf5;
+  padding: 20px;
   -ms-grid-row: 1;
   -ms-grid-row-span: 3;
   -ms-grid-column: 1;
@@ -230,6 +231,7 @@ a:focus {
   border-radius: 25px;
   border: 2px solid #656176;
   background-color: #decdf5;
+  padding: 20px;
   -ms-grid-row: 1;
   -ms-grid-row-span: 4;
   -ms-grid-column: 3;
@@ -257,6 +259,7 @@ a:focus {
   border-radius: 25px;
   border: 2px solid #656176;
   background-color: #decdf5;
+  padding: 20px;
   -ms-grid-row: 4;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
@@ -293,9 +296,10 @@ a:focus {
   border-radius: 25px;
   border: 2px solid #656176;
   background-color: #decdf5;
+  padding: 20px;
 }
 
-.contentBox h1 {
+.contentBox h2 {
   text-transform: uppercase;
 }
 
@@ -344,37 +348,7 @@ a:focus {
   grid-area: acmeText;
 }
 
-/* ---------------------PORTFOLIO-----------------------
-// portfoliosida med alla projekt, använder grid här
-
-.portfolioContent {
-	margin: 0 auto;
-	background-color: $secondColor;
-	display: grid;
-	grid-template-columns: 100px max-content repeat(2, 1fr) 100px;
-	grid-template-rows: 3fr;
-	grid-gap: 10px;
-	//definierar .portfolioContents grid-items kolumnspann
-	.picPortfolio {
-		grid-column-start: 2;
-		grid-column-end: 3;
-		//bilderna ska visas som block istället för inline och vara responsiva
-		img {
-			display: block;
-			max-width: 300px;
-			@include responsive();
-		}
-	}
-	//definierar .portfolioContents grid-items kolumnspann
-	.textPortfolio {
-		grid-column-start: 3;
-		grid-column-end: 5;
-		background-color: $lightColor;
-		padding: 10px;
-		justify-content: center;
-	}
-}
-*/
+/* ---------------------MIN UTBILDNING-----------------------*/
 .educationContent {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -400,7 +374,9 @@ a:focus {
   text-align: justify;
 }
 
+/* --------------MOBILANPASSAD DESIGN-----------------*/
 @media all and (max-width: 600px) {
+  /*------------------HEM-------------------*/
   .mainContent {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -435,6 +411,7 @@ a:focus {
     width: 100%;
     height: auto;
   }
+  /*------------------HEADER & FOOTER-------------------*/
   header ul,
   footer ul {
     display: -webkit-box;
@@ -449,54 +426,14 @@ a:focus {
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin-right: 10px;
   }
-  header ul li,
-  footer ul li {
-    margin-left: 15px;
-    margin-right: 0px;
+  /*------------------PORTFOLIO-------------------*/
+  .portfolio {
+        grid-template-areas: "yatzyPic" "yatzyText" "quizPic" "quizText" "acmePic" "acmeText";
   }
-  .portfolioContent {
-    margin: 0 auto;
-    background-color: #656176;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    -ms-grid-rows: 6fr;
-        grid-template-rows: 6fr;
-    grid-gap: 10px;
-  }
-  .portfolioContent .picPortfolio {
-    -ms-grid-column: 1;
-        grid-column-start: 1;
-    margin: 0 auto;
-  }
-  .portfolioContent .picPortfolio img {
-    margin: 0 auto;
-    display: block;
-    max-width: 300px;
-    width: 100%;
-    height: auto;
-  }
-  .portfolioContent .textPortfolio {
-    -ms-grid-column: 1;
-        grid-column-start: 1;
-    background-color: #f8f1ff;
-    padding: 10px;
-  }
-  .portfolioContent .textPortfolio p {
-    text-align: justify;
-  }
+  /*------------------OM MIG-------------------*/
   .aboutMe {
-    display: -ms-grid;
-    display: grid;
         grid-template-areas: "aboutMeText" "aboutMeText" "contactContainer" "musicContainer";
-    grid-gap: 10px 20px;
-    padding: 20px;
-  }
-  .aboutMe h2 {
-    font-family: myHighlightFont;
   }
 }
 /*# sourceMappingURL=style.css.map */

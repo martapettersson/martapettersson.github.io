@@ -1,4 +1,4 @@
-//nollställer och fixar så sidan funkar med border-box
+//nollställer margin/padding och fixar så sidan funkar med border-box
 *,
 ::before,
 ::after {
@@ -17,7 +17,7 @@
 	src: url(fonts/tomatoes/Tomatoes-O8L8.ttf);
 }
 
-//stylar wrappern där header, main och footer ingår
+//stylar wrappern där header, innehåll och footer ingår på alla sidor
 .wrapper {
 	@include flex(flex-start, column);
 	max-width: 85vw;
@@ -25,21 +25,23 @@
 	margin: 0px auto;
 }
 
-// sätter ett typsnitt och färg som får gälla för main
+// sätter ett typsnitt och färg för huvudinnehåll
 .baseStyle {
 	font-family: $myFont;
 	background-color: $lightColor;
 	color: $darkColor;
 }
 
+// för mitt namn på förstasidan
 #highLight {
 	font-size: 120%;
 	color: $thirdColor;
 	font-family: myHighlightFont;
 }
 
-// lite styling för header och footer, meny och ikoner
-//använder flex här och sätter lite margin och padding
+/* --------------HEADER & FOOTER----------------*/
+//meny och kontaktikoner, använder flex här och sätter lite margin och padding
+
 header,
 footer {
 	font-size: 130%;
@@ -59,7 +61,7 @@ footer {
 		padding: 0;
 		@include flex(space-between, row);
 		li {
-			margin-right: 15px;
+			margin-left: 15px;
 		}
 	}
 }
@@ -91,6 +93,7 @@ a:focus {
 
 // min förstasida, HEM, använder flex här och sätter lite padding
 .mainContent {
+	@extend .baseStyle;
 	padding-top: 20px;
 	padding-bottom: 20px;
 	@include flex(center, column);
@@ -133,6 +136,7 @@ a:focus {
 /* --------------------OM MIG---------------------*/
 
 .aboutMe {
+	@extend .baseStyle;
 	display: grid;
 	grid-template-areas:
 		"aboutMeText aboutMeText contactContainer"
@@ -169,6 +173,7 @@ a:focus {
 // portfoliosida med alla projekt, använder grid här
 
 .portfolio {
+	@extend .baseStyle;
 	display: grid;
 	grid-template-areas:
 		"yatzyPic yatzyText"
@@ -185,7 +190,7 @@ a:focus {
 	max-height: 270px;
 	padding: 20px;
 	@include niceBox();
-	h1 {
+	h2 {
 		text-transform: uppercase;
 	}
 	img {
@@ -215,40 +220,11 @@ a:focus {
 	grid-area: acmeText;
 }
 
-/* ---------------------PORTFOLIO-----------------------
-// portfoliosida med alla projekt, använder grid här
-
-.portfolioContent {
-	margin: 0 auto;
-	background-color: $secondColor;
-	display: grid;
-	grid-template-columns: 100px max-content repeat(2, 1fr) 100px;
-	grid-template-rows: 3fr;
-	grid-gap: 10px;
-	//definierar .portfolioContents grid-items kolumnspann
-	.picPortfolio {
-		grid-column-start: 2;
-		grid-column-end: 3;
-		//bilderna ska visas som block istället för inline och vara responsiva
-		img {
-			display: block;
-			max-width: 300px;
-			@include responsive();
-		}
-	}
-	//definierar .portfolioContents grid-items kolumnspann
-	.textPortfolio {
-		grid-column-start: 3;
-		grid-column-end: 5;
-		background-color: $lightColor;
-		padding: 10px;
-		justify-content: center;
-	}
-}
-*/
-
+/* ---------------------MIN UTBILDNING-----------------------*/
 // style på min utbildningssida, använder flex här och sätter lite margin
+
 .educationContent {
+	@extend .baseStyle;
 	@include flex(flex-start, column);
 	h1,
 	h2,
@@ -262,15 +238,17 @@ a:focus {
 	}
 }
 
-// mobilanpassad design
+/* --------------MOBILANPASSAD DESIGN-----------------*/
 @media all and (max-width: 600px) {
+	/*------------------HEM-------------------*/
 	//flexar om till row istället för column
+
 	.mainContent {
 		@include flex(center, column);
 		flex-wrap: wrap;
 	}
 
-	//texten ska vara i mitten
+	//Texten ska vara i mitten
 	#textHome {
 		@include flex(center, column);
 		flex-wrap: wrap;
@@ -278,64 +256,40 @@ a:focus {
 		padding: 10px;
 	}
 
-	//bilden ska vara responsiv
+	//Bilden ska vara responsiv
 	#picHome img {
 		@include responsive();
 	}
-
-	//headern och footern behövde lite margin här för att rubrik och ul skulle va i linje
+	/*------------------HEADER & FOOTER-------------------*/
+	//Elementen behöver vara i mitten
 	header,
 	footer {
 		ul {
 			@include flex(center, row);
 			flex-wrap: wrap;
-			margin-right: 10px;
-			li {
-				margin-left: 15px;
-				margin-right: 0px;
-			}
 		}
+	}
+	/*------------------PORTFOLIO-------------------*/
+	//griden ska vara en kolumn med flera rader istället
+
+	.portfolio {
+		grid-template-areas:
+			"yatzyPic"
+			"yatzyText"
+			"quizPic"
+			"quizText"
+			"acmePic"
+			"acmeText";
 	}
 
-	//griden fick bli en kolumn med flera rader istället
-	.portfolioContent {
-		margin: 0 auto;
-		background-color: $secondColor;
-		display: grid;
-		grid-template-columns: 1fr;
-		grid-template-rows: 6fr;
-		grid-gap: 10px;
-		.picPortfolio {
-			grid-column-start: 1;
-			margin: 0 auto;
-			img {
-				margin: 0 auto;
-				display: block;
-				max-width: 300px;
-				@include responsive();
-			}
-		}
-		.textPortfolio {
-			grid-column-start: 1;
-			background-color: $lightColor;
-			padding: 10px;
-			p {
-				text-align: justify;
-			}
-		}
-	}
+	/*------------------OM MIG-------------------*/
+	//griden ska vara en kolumn med flera rader istället
 
 	.aboutMe {
-		display: grid;
 		grid-template-areas:
 			"aboutMeText"
 			"aboutMeText"
 			"contactContainer"
 			"musicContainer";
-		grid-gap: 10px 20px;
-		padding: 20px;
-		h2 {
-			font-family: myHighlightFont;
-		}
 	}
 }

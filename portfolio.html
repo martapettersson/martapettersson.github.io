@@ -20,26 +20,26 @@
 		<div class="wrapper">
 			<header>
 				<!-- min meny -->
-				<nav>
+				<nav id="menu">
 					<ul>
-						<li><a href="index.html">Hem</a></li>
-						<li><a href="portfolio.html">Portfolio</a></li>
+						<li><a href="index.html" id="homePage">Hem</a></li>
+						<li><a href="portfolio.html" id="portfolioPage">Portfolio</a></li>
 						<li>
-							<a href="utbildning.html">Utbildning</a>
+							<a href="utbildning.html" id="educationPage">Utbildning</a>
 						</li>
 						<li>
-							<a href="om_mig.html">Om</a>
+							<a href="om_mig.html" id="aboutPage">Om</a>
 						</li>
 					</ul>
 				</nav>
 			</header>
 			<!-- portfolio med info, bilder och länk vidare till projekten -->
-			<div class="baseStyle portfolio">
+			<div class="portfolio">
 				<div class="contentBox portfolioPic" id="yatzyPic">
 					<img src="/img/yatzy.png" alt="Yatzy-projektet" />
 				</div>
 				<div class="contentBox portfolioText" id="yatzyText">
-					<h1>Yatzy</h1>
+					<h2>Yatzy</h2>
 					<p>
 						Detta var en gruppupgift i skolan där vi skulle bygga ett Yatzyspel
 						online. Fokus låg på att programmera objektorienterat och manipulera
@@ -56,10 +56,16 @@
 					</p>
 				</div>
 				<div class="contentBox portfolioPic" id="quizPic">
-					<img src="/img/quiz.png" alt="Quiz-projektet" />
+					<img src="/img/quiz.png" alt="Quiz-sidan" />
 				</div>
 				<div class="contentBox portfolioText" id="quizText">
-					<h1>Quiz</h1>
+					<a
+						aria-label="Quizet"
+						href="https://martapettersson.github.io/quiz/"
+						target="_blank"
+					>
+						<h2>Quiz</h2></a
+					>
 					<p>
 						Detta var en individuell upgift i skolan där vi skulle skriva en
 						quiz-applikation, med andra ord ett frågesport-spel. Fokus i
@@ -89,7 +95,7 @@
 					<img src="/img/acme.png" alt="Acme-projektet" />
 				</div>
 				<div class="contentBox portfolioText" id="acmeText">
-					<h2>Om Acme-projektet</h2>
+					<h2>Acme</h2>
 					<p>
 						Detta var en gruppupgift i skolan där vi skulle bygga och designa en
 						hemsida till låtsas-bolaget ACME Events, för att hantera evenemang.
@@ -156,5 +162,6 @@
 				</ul>
 			</footer>
 		</div>
+		<script src="script.js"></script>
 	</body>
 </html>
