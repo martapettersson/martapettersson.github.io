@@ -170,6 +170,7 @@ footer {
 
 .portfolio {
 	@extend .baseStyle;
+	background-color: $secondColor;
 	@include grid();
 	grid-template-areas:
 		"yatzyPic yatzyText"
@@ -177,6 +178,9 @@ footer {
 		"acmePic acmeText";
 	justify-content: center;
 	justify-items: center;
+	h2 {
+		font-family: myHighlightFont;
+	}
 }
 
 .contentBox {
@@ -184,9 +188,6 @@ footer {
 	max-height: 300px;
 	padding: 20px;
 	@include niceBox();
-	h2 {
-		text-transform: uppercase;
-	}
 	img {
 		@include responsive();
 	}

@@ -17,10 +17,10 @@
 		<title>Om Marta Pettersson</title>
 	</head>
 	<body>
-		<!-- i wrapper ingår header, main och footer-->
+		<!-- I wrapper ingår header, information om mig och footer-->
 		<div class="wrapper">
 			<header>
-				<!-- min meny -->
+				<!-- Min meny -->
 				<nav>
 					<ul>
 						<li><a href="index.html">Hem</a></li>
@@ -34,7 +34,7 @@
 					</ul>
 				</nav>
 			</header>
-			<!-- en kort text om mig och en bild på mig -->
+			<!-- En kort text om mig och en bild på mig -->
 			<div class="aboutMe">
 				<div id="aboutMeText">
 					<h2>Om mig</h2>
@@ -53,6 +53,7 @@
 						starkt team.
 					</p>
 				</div>
+				<!--Kontaktinformation, mail, tele, länkar-->
 				<div id="contactContainer">
 					<h2>Kontakt</h2>
 					<ul>
@@ -62,6 +63,7 @@
 								marta.pettersson@gmail.com</a
 							>
 						</li>
+						<!--tabindex så telefonnumret blir enkelt att markera-->
 						<li tabindex="0">
 							<i aria-label="Telefonnummer" class="bx bxs-phone"></i>+46 73 02
 							88 223
@@ -82,19 +84,21 @@
 						</li>
 					</ul>
 				</div>
+				<!--Lite kort om min musik-->
 				<div id="musicContainer">
 					<h2>Min Musik</h2>
 					<p>
 						Tillsammans med Erika Ahlström har jag ett band som heter I Am
-						Karate. Klicka här för att lyssna på oss:
+						Karate. Vi gör popmusik till och från hjärtat. Klicka här för att
+						lyssna på oss:
 						<a target="_blank" href="https://soundcloud.com/i-am-karate"
 							><strong>I Am Karate</strong></a
 						>
 					</p>
 				</div>
 			</div>
-			<!-- Innehåller ikoner som är länkar till att skicka mail, linkedin mm
-			använder aria-label till ikonerna för att förtydliga vad de är-->
+			<!-- Footer innehåller ikoner som är länkar till att skicka mail, linkedin mm
+			använder aria-label till ikonerna för ökad tillgänglighet-->
 			<footer>
 				<ul>
 					<li>
@@ -111,7 +115,7 @@
 							href="https://www.linkedin.com/in/marta-pettersson-80a8b31b9/"
 							target="_blank"
 							><i
-								aria-label="Öppna ny tab för Martas Linkedin-sida"
+								aria-label="Martas Linkedin-sida"
 								class="bx bxl-linkedin myIcons"
 							></i
 						></a>
@@ -119,7 +123,7 @@
 					<li>
 						<a href="https://github.com/martapettersson" target="_blank"
 							><i
-								aria-label="Öppna ny tab för Martas Github-sida"
+								aria-label="Martas Github-sida"
 								class="bx bxl-github myIcons"
 							></i
 						></a>
@@ -127,7 +131,7 @@
 					<li>
 						<a href="https://soundcloud.com/i-am-karate" target="_blank"
 							><i
-								aria-label="Öppna ny tab för Martas musik"
+								aria-label="I Am Karates musik"
 								class="bx bxs-music myIcons"
 							></i
 						></a>

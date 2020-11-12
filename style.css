@@ -257,6 +257,7 @@ footer ul li {
 
 /* ---------------------PORTFOLIO-----------------------*/
 .portfolio {
+  background-color: #656176;
   display: -ms-grid;
   display: grid;
   grid-gap: 10px 20px;
@@ -266,6 +267,10 @@ footer ul li {
       -ms-flex-pack: center;
           justify-content: center;
   justify-items: center;
+}
+
+.portfolio h2 {
+  font-family: myHighlightFont;
 }
 
 .contentBox {
@@ -286,10 +291,6 @@ footer ul li {
   border: 2px solid #656176;
   background-color: #decdf5;
   padding: 20px;
-}
-
-.contentBox h2 {
-  text-transform: uppercase;
 }
 
 .contentBox img {

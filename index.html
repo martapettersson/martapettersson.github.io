@@ -5,10 +5,12 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="style.css" />
+		<!--Länkar in font från Google-->
 		<link
 			href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
 			rel="stylesheet"
 		/>
+		<!--Länkar in ikoner från Boxicons-->
 		<link
 			href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
 			rel="stylesheet"
@@ -17,10 +19,10 @@
 		<title>Marta Petterssons Hemsida</title>
 	</head>
 	<body>
-		<!-- i wrapper ingår header, main och footer-->
+		<!-- I wrapper ingår header, main och footer-->
 		<div class="wrapper">
 			<header>
-				<!-- min meny -->
+				<!-- Min meny -->
 				<nav>
 					<ul>
 						<li><a href="index.html">Hem</a></li>
@@ -34,11 +36,14 @@
 					</ul>
 				</nav>
 			</header>
-			<!-- lite om mig och en bild på mig -->
+			<!-- Första sida, kort presentation + bild-->
 			<div class="mainContent">
-				<a href="om_mig.html"
+				<a href="om_mig.html" aria-label="Mer om Marta"
 					><div id="picHome" class="border-pic">
-						<img src="/img/marta_pic.jpg" alt="Bild på Marta Pettersson" /></div
+						<img
+							src="/img/marta_pic.jpg"
+							alt="Marta tittar in i kameran och ler"
+						/></div
 				></a>
 
 				<div id="textHome">
@@ -48,8 +53,8 @@
 					</h3>
 				</div>
 			</div>
-			<!-- Innehåller ikoner som är länkar till att skicka mail, linkedin mm
-			använder aria-label till ikonerna för att förtydliga vad de är-->
+			<!-- Footer innehåller ikoner som är länkar till att skicka mail, linkedin mm
+			använder aria-label till ikonerna för ökad tillgänglighet-->
 			<footer>
 				<ul>
 					<li>
@@ -66,7 +71,7 @@
 							href="https://www.linkedin.com/in/marta-pettersson-80a8b31b9/"
 							target="_blank"
 							><i
-								aria-label="Öppna ny tab för Martas Linkedin-sida"
+								aria-label="Martas Linkedin-sida"
 								class="bx bxl-linkedin myIcons"
 							></i
 						></a>
@@ -74,7 +79,7 @@
 					<li>
 						<a href="https://github.com/martapettersson" target="_blank"
 							><i
-								aria-label="Öppna ny tab för Martas Github-sida"
+								aria-label="Martas Github-sida"
 								class="bx bxl-github myIcons"
 							></i
 						></a>
@@ -82,7 +87,7 @@
 					<li>
 						<a href="https://soundcloud.com/i-am-karate" target="_blank"
 							><i
-								aria-label="Öppna ny tab för Martas musik"
+								aria-label="I Am Karates musik"
 								class="bx bxs-music myIcons"
 							></i
 						></a>
