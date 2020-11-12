@@ -269,8 +269,8 @@ footer ul li {
 }
 
 .contentBox {
-  max-width: 400px;
-  max-height: 270px;
+  max-width: 440px;
+  max-height: 300px;
   padding: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
