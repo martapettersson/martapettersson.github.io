@@ -1,3 +1,5 @@
+@charset "UTF-8";
+/* --------------ALLMÄNT----------------*/
 *,
 ::before,
 ::after {
@@ -24,12 +26,11 @@
       -ms-flex-direction: column;
           flex-direction: column;
   max-width: 85vw;
-  height: 100vh;
   margin: 0px auto;
 }
 
 .baseStyle, header,
-footer, .mainContent, .aboutMe, .portfolio, .educationContent {
+footer, .mainContent, .aboutMe, .portfolio {
   font-family: "Open Sans", sans-serif;
   background-color: #f8f1ff;
   color: #534d56;
@@ -39,6 +40,20 @@ footer, .mainContent, .aboutMe, .portfolio, .educationContent {
   font-size: 120%;
   color: #1b998b;
   font-family: myHighlightFont;
+}
+
+a:link,
+a:visited {
+  color: #534d56;
+  text-decoration: none;
+  cursor: auto;
+  -webkit-transition: color 0.4s ease-in-out;
+  transition: color 0.4s ease-in-out;
+}
+
+a:hover,
+a:focus {
+  color: #1b998b;
 }
 
 /* --------------HEADER & FOOTER----------------*/
@@ -106,24 +121,11 @@ footer ul li {
   text-shadow: 2px 2px #f8f1ff;
 }
 
-a:link,
-a:visited {
-  color: #534d56;
-  text-decoration: none;
-  cursor: auto;
-  -webkit-transition: color 0.4s ease-in-out;
-  transition: color 0.4s ease-in-out;
-}
-
-a:hover,
-a:focus {
-  color: #1b998b;
-}
-
 /* -------------------HEM--------------------*/
 .mainContent {
   padding-top: 20px;
   padding-bottom: 20px;
+  height: 500px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -142,23 +144,10 @@ a:focus {
 }
 
 #textHome {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  text-align: center;
 }
 
 #picHome {
-  position: relative;
   margin: 10px;
 }
 
@@ -186,9 +175,9 @@ a:focus {
 .aboutMe {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "aboutMeText aboutMeText contactContainer" "aboutMeText aboutMeText contactContainer" "aboutMeText aboutMeText contactContainer" "musicContainer musicContainer contactContainer";
   grid-gap: 10px 20px;
   padding: 20px;
+      grid-template-areas: "aboutMeText aboutMeText contactContainer" "aboutMeText aboutMeText contactContainer" "aboutMeText aboutMeText contactContainer" "musicContainer musicContainer contactContainer";
 }
 
 .aboutMe h2 {
@@ -270,9 +259,9 @@ a:focus {
 .portfolio {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "yatzyPic yatzyText" "quizPic quizText" "acmePic acmeText";
   grid-gap: 10px 20px;
-  padding: 10px;
+  padding: 20px;
+      grid-template-areas: "yatzyPic yatzyText" "quizPic quizText" "acmePic acmeText";
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -310,6 +299,7 @@ a:focus {
 
 .portfolioText {
   overflow: scroll;
+  background-color: #f8f1ff;
 }
 
 #yatzyPic {
@@ -349,7 +339,21 @@ a:focus {
 }
 
 /* ---------------------MIN UTBILDNING-----------------------*/
-.educationContent {
+.myEducation {
+  font-family: "Open Sans", sans-serif;
+  background-color: #1b998b;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 10px 20px;
+  padding: 20px;
+      grid-template-areas: "intro intro work" "intro intro work" "education education includes" "education education nackademin";
+}
+
+.myEducation h2 {
+  font-family: myHighlightFont;
+}
+
+.educationBox {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -360,22 +364,67 @@ a:focus {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  border-radius: 25px;
+  border: 2px solid #656176;
+  background-color: #decdf5;
+  padding: 20px;
+  background-color: #f8f1ff;
+  color: #534d56;
 }
 
-.educationContent h1,
-.educationContent h2,
-.educationContent h4,
-.educationContent p {
-  margin-left: 10px;
-  margin-right: 10px;
+.educationBox ul {
+  list-style-type: square;
+  list-style-position: inside;
 }
 
-.educationContent p {
-  text-align: justify;
+.educationBox h2 {
+  margin-bottom: 20px;
+}
+
+#intro {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: intro;
+}
+
+#work {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 3;
+  grid-area: work;
+}
+
+#education {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: education;
+}
+
+#includes {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: includes;
+}
+
+#nackademin {
+  -ms-grid-row: 4;
+  -ms-grid-column: 3;
+  grid-area: nackademin;
+}
+
+#nackademin ul {
+  list-style: none;
 }
 
 /* --------------MOBILANPASSAD DESIGN-----------------*/
 @media all and (max-width: 600px) {
+  .wrapper {
+    max-width: 100vw;
+  }
   /*------------------HEM-------------------*/
   .mainContent {
     display: -webkit-box;
@@ -434,6 +483,11 @@ a:focus {
   /*------------------OM MIG-------------------*/
   .aboutMe {
         grid-template-areas: "aboutMeText" "aboutMeText" "contactContainer" "musicContainer";
+  }
+  /*------------------MIN UTBILDNING-------------------*/
+  .myEducation {
+    padding: 10px;
+        grid-template-areas: "intro" "work" "education" "includes" "nackademin";
   }
 }
 /*# sourceMappingURL=style.css.map */
