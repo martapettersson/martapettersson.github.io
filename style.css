@@ -440,6 +440,9 @@ footer ul li {
             flex-direction: column;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
   }
   #textHome {
     display: -webkit-box;

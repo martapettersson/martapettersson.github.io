@@ -276,6 +276,7 @@ footer {
 	.mainContent {
 		@include flex(center, column);
 		flex-wrap: wrap;
+		height: fit-content;
 	}
 
 	//Texten ska vara i mitten
