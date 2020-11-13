@@ -47,10 +47,25 @@ Team, scrum master och produktägare går tillsammans igenom erfarenheter från 
 Sprint planning
 Produktägaren, scrum master och teamet går igenom de önskemål som finns. Därefter bryter teamet ned kraven och tidsestimerar (ofta med planning poker och ibland med story points istället för timmar).
 För- och nackdelar med SCRUM
-Värt att nämna är att SCRUM kanske inte passar varenda projekt men det fungerar för det mesta bra när det kommer till webbutveckling på en lite större skala. Det är svårt att identifiera nackdelar med SCRUM eftersom arbetsmetoden är så pass holistisk, strukturerad och involverande av alla inblandade intressenter. Ständig uppföljning i form av sprintgenomgångar under arbetets gång förebygger mot merarbete, och återblickarna ger möjlighet till kontemplation och förbättring. Daily scrums stärker arbetsteamets kommunikation, eliminerar andra möten, identifierar snabbt hinder som då snabbt kan tas tag i, markerar och främjar snabbt beslutsfattande och förbättrar teamets kunskapsnivå.
+Värt att nämna är att SCRUM passar inte alla typer av arbetsprojekt. Men det fungerar för det mesta bra och har fått mycket positiv kritik när det kommer till mjukvaru- och webbutveckling. Det är svårt att identifiera nackdelar med SCRUM eftersom arbetsmetoden är så pass holistisk, strukturerad och involverande av alla inblandade intressenter. Ständig uppföljning i form av sprintgenomgångar under arbetets gång förebygger mot merarbete, och återblickarna ger möjlighet till kontemplation och förbättring. Daily scrums stärker arbetsteamets kommunikation, eliminerar andra möten, identifierar snabbt hinder som då snabbt kan tas tag i, markerar och främjar snabbt beslutsfattande och förbättrar teamets kunskapsnivå.
 
 
 Däremot är det vanligt att ett arbetsteam som aldrig någonsin jobbat i SCRUM upplever metoden som något avancerad och därav till och med avskräckande. Det kan vara mycket att smälta och sätta säga in i, nya termer och koncept mm. Men de flesta som fått pröva på att arbeta på detta sätt vittnar om en positiv upplevelse av metoden. 
+
+
+Om en tittar till ämnet teknisk skuld finns det här svårigheter med SCRUM, eftersom det inte finns en tydlig roll som ansvarar för att hantera det området. Den tekniska skulden bör prioriteras för att undvika problem med att implementera ny funktionalitet i framtiden, samt förlänga produktens livslängd. I många fall upplever utvecklarna en press på att producera det önskade resultatet under en sprint. Eftersom fokus i SCRUM ligger på att leverera mervärde till produkten, blir allt annat sekundärt. Stressen som uppstår på grund av detta kan resultera i hastiga lösningar med sämre kvalité och/eller förseningar på grund av dåliga estimeringar. Stress och den tekniska skulden tenderar att byggas på om inte åtgärder tas. Det krävs en medvetenhet hos de som arbetar med SCRUM att det kan vara bra att flytta fokus från här och nu samt snabb leverans, till framtiden och se till att produkten blir så bra som möjligt i ett längre perspektiv. 
+
+
+Källor: 
+http://lup.lub.lu.se/luur/download?func=downloadFile&recordOId=8881905&fileOId=8881907
+https://www.addq.se/inspiration-kunskap/vad-ar-teknisk-skuld
+https://sv.wikipedia.org/wiki/Scrum 
+https://www.scrum.org/ 
+https://agilemanifesto.org/iso/sv/principles.html 
+
+
+
+
 ________________
 
 
@@ -65,7 +80,10 @@ Grafisk profil är en typ av manual/instruktion för hur ett företags/organisat
 
 Syftet är att kunna kommunicera enhetligt för att bygga ett starkt varumärke. Genom att vara konsekvent med designen så blir det tydligt för mottagaren vem kommunikationen kommer ifrån och det skapar igenkänning.
 Att göra en grafisk profil
-Profilen kan sammanställas i ett dokument eller liknande för att ha som utgångspunkt när en skapar bilder, reklamkampanjer, affischer, bloggheader, hemsidedesign, visitkort m.m. Vissa företag har också sin grafiska profil på sin hemsida med nedladdningsbara logotyper, färger, m.m. för att underlätta för kunder eller liknande som ska jobba med profilen.
+För att nå ut på de digitala plattformarna är en grafisk profil anpassad för digitalt bruk a och o. Det krävs därför att filformat, fotografiska bilder samt typsnitt anpassas, och att det grafiska materialet klarar av responsivitet samt kraven för webben generellt. 
+
+
+Profilen kan med fördel sammanställas på en digital plattform som Dropbox eller liknande, för att sedan ha som utgångspunkt när en skapar bilder, reklamkampanjer, affischer, bloggheader, hemsidedesign, visitkort m.m. Vissa företag har också sin grafiska profil på sin hemsida med nedladdningsbara logotyper, färger, m.m. för att underlätta för kunder eller liknande som ska jobba med profilen.
 
 
 Generellt kan en säga att en grafisk profil bör innehålla:
@@ -77,8 +95,22 @@ Generellt kan en säga att en grafisk profil bör innehålla:
 
 Viktigt att tänka på: vad ska kommuniceras och till vem? Vad kan alla olika element i en grafiska profil skapa för associationer hos den som ser den digitala kommunikationen? Alla tolkar inte saker på samma sätt – så det är viktigt att tänka igenom konnotationer, symbolik, färgassociationer osv. 
 För- och nackdelar med Grafisk profil
-En grafisk profil i sig bidrar med tydlighet både för mottagare och kommunikatör, och konsekvent kommunikation skapar igenkänning. Det är dock viktigt att verkligen tänka igenom sin grafiska profil. Representerar den verkligen det du vill kommunicera? Kan det en själv tolkar på ett visst sätt tolkas på ett helt annat sätt av en annan person? Tex fick rosa flamingos som trädgårdsprydnad ett uppsving för ett par år sen. Det alla som köpte dessa kanske inte tänkte på då är att en rosa flamingo är en hemlig symbol för swingers att “här bor swingers, välkommen in”. Det finns många kommunikationsmissar en kan råka begå, däremot ska detta såklart inte avskräcka en helt från att skapa en grafisk profil för det. Vill en som icke-swinger ha en rosa flamingo som sin symbol i företaget - låt så va då! En kanske bara tycker det är fint.
-Det är på många sätt lättare att snabbt jobba fram en lämplig webbdesign när det finns en utförlig grafisk profil att följa, eftersom en då vet hur kommunikationen ska se ut utåt. Kort sagt slipper du som webbdesigner identifiera och fatta en rad beslut kring kundens visuella identitet, och får mer tid att fokusera på att utveckla en fungerande produkt. Pappret är inte blankt, vilket ibland kan främja kreativitet. Däremot kan regler även hämma kreativitet och hindra idéer att flöda fritt. Ibland kanske en “bättre” design finns runt hörnet men en tillåts inte utforska det iom att en måste följa den grafiska profilen. 
+En grafisk profil i sig bidrar med tydlighet både för mottagare och kommunikatör, och konsekvent kommunikation skapar igenkänning. Det är dock viktigt att verkligen tänka igenom sin grafiska profil. Representerar den verkligen det du vill kommunicera? Kan det en själv tolkar på ett visst sätt tolkas på ett helt annat sätt av en annan person? Det finns många kommunikationsmissar en kan begå, däremot ska detta såklart inte avskräcka en helt från att skapa en grafisk profil för det. 
+
+
+Det är på många sätt lättare för att arbeta fram en lämplig webbdesign när det finns en utförlig grafisk profil att följa, eftersom en då vet hur kommunikationen ska se ut utåt. Kort sagt slipper du som webbdesigner identifiera och fatta en rad beslut kring kundens visuella identitet, och får mer tid att fokusera på att utveckla en fungerande produkt. 
+När det finns en grafisk profil är inte pappret blankt, vilket kan göra det lättare att sätta igång kreativiteten och föra arbetet framåt. Däremot kan regler även hämma kreativitet och hindra idéer att flöda fritt. Ibland kanske en “bättre” design finns runt hörnet men en tillåts inte utforska det iom att en måste följa den grafiska profilen. Som webbutvecklare/designer kan det bli en utmaning i sig att följa en grafisk profil som en själv inte gillar. En kanske får feedback från kund som inte känns estetiskt rimlig, men vad som är snyggt respektive fult är en subjektiv upplevelse. I de flesta lägen gäller den gamla klyschan “kunden har alltid rätt”. Oftast är det bästa alternativet för ens egen del att försöka göra kunden nöjd. Det skapar mer jobb för en själv i det långa loppet och en blir eftertraktad på arbetsmarknaden. 
+
+
+Källor:
+https://teknifik.se/2016/02/grafisk-profil-vad-det-ar-och-varfor-du-behover-en/
+https://sv.wikipedia.org/wiki/Grafisk_profil
+https://nyladesign.se/snabbkurs-grafisk-profil/
+https://du.diva-portal.org/smash/get/diva2:1170453/FULLTEXT01.pdf
+
+
+
+
 ________________
 
 
@@ -109,11 +141,26 @@ Webben ger stora möjligheter att tillhandahålla information och tjänster utan
 
 Det finns många webbriktlinjer som handlar om tillgänglighet. Läs mer: https://webbriktlinjer.se/principer/tillganglig/
 För- och nackdelar med Tillgänglighet
-Tillgänglighet i sig är något som borde vara en självklarhet. Däremot kan det vara svårt i vissa lägen att prioritera tillgänglighet när det kommer till designval. Vissa utseenden på sidor/applikationer går tyvärr inte alltid i linje med den bästa tillgängligheten. Men som företag måste man ibland ta sådana beslut där looken måste gå före. Ta tex ett modemärke som vill ha en modern hemsida som känns i tiden. Om vi då säger att det är en trend just då att ha en nästan helt gömd meny - av någon anledning - så måste utvecklaren ta detta i hänsyn. Det är en trend och kunden efterfrågar trendigt. Då får dessvärre tillgängligheten sig en törn men förhoppningsvis kanske en kan jobba in tillgänglighet på något annat sätt. Det gäller att försöka vara kreativ, ha tillgänglighet i bakhuvudet och göra det bästa av situationen. Ofta handlar tillgänglighet om tydlighet och ibland går det inte hand i hand med en snygg design. Men ofta skulle jag själv säga att det är just det det gör. En massa beskrivande text som tar upp halva sidan kanske inte känns så lyxigt - men tydlighet, minimalism och enkelhet är något som ofta skapar en tilldragande design. Varför skulle inte tillgänglighet kunna vara något attraktivt? Det känns hur som helst inte så fräscht med en mystiskt “cool” design på bekostnad av diskriminering av människor.
+Tillgänglighet i sig är något som borde vara en självklarhet. Däremot kan det vara svårt i vissa lägen att prioritera tillgänglighet när det kommer till designval. Vissa utseenden på sidor/applikationer går tyvärr inte alltid i linje med den bästa tillgängligheten. Men som företag måste man ibland ta sådana beslut där looken måste gå före. Ta tex ett modemärke som vill ha en modern hemsida som känns i tiden. Om vi då säger att det är en trend just då att ha en nästan helt gömd meny - av någon anledning - så måste utvecklaren ta detta i hänsyn. Det är en trend och kunden efterfrågar trendigt. Då får dessvärre tillgängligheten sig en törn men förhoppningsvis kanske en kan jobba in tillgänglighet på något annat sätt. Det gäller att försöka vara kreativ, ha tillgänglighet i bakhuvudet och göra det bästa av situationen. Ofta handlar tillgänglighet om tydlighet och ibland går det inte hand i hand med en snygg design. Men ofta skulle jag själv säga att det är just det det gör. En massa beskrivande text som tar upp halva sidan kanske inte känns så lyxigt - men tydlighet, minimalism och enkelhet är något som ofta skapar en tilldragande design. Varför skulle inte tillgänglighet kunna vara något attraktivt? Det känns hur som helst inte så fräscht med en mystiskt “cool” design på bekostnad av diskriminering av människor. 
+
 
 Tillgänglighetskrav som jag har implementerat i detta projekt:
-* 3.1.1: Ange sidans språk.
-* 1.4.10: Skapa en flexibel layout som fungerar vid förstoring eller liten skärm.
+* 1.1.1: Beskriv med text allt innehåll som inte är text.
+   * Med hjälp av alt beskriver jag bilder, och med aria-label attribut förtydligar ikoner och jag vart länkar leder.
 * 1.4.3: Använd tillräcklig kontrast mellan text och bakgrund.
+   * Med hjälp av Inspektera i browsern, välja ett element så kan jag se om kontrasten är tillräckligt hög. 
 * 2.4.2: Skriv beskrivande sidtitlar.
-* 2.4.4: Skriv tydliga länkar. 
+   * Använder tagen title i head för att beskriva varje html sida lite kort. 
+* 2.1.1: Utveckla systemet så att det går att hantera med enbart tangentbordet.
+   * Det går att hantera all funktionalitet utan krav på hastighet. Viktigt eftersom många hjälpmedel i praktiken fungerar som tangentbord. 
+* 2.4.6: Skriv beskrivande rubriker och etiketter
+   * Tydliga beskrivningar är bra för alla användare, men framför allt för personer som har lässvårigheter och försämrat korttidsminne eftersom det ger det en möjlighet att förutse vad varje del av webbplatsen innehåller. För personer som navigerar med tangentbordet och/eller använder skärmläsare ger det en möjlighet att hoppa till olika delar av innehållet.
+* 3.1.1: Ange sidans språk.
+   * Jag använder attributet lang i html tagen för att förtydliga att sidornas språk är svenska. 
+* 3.2.3: Var konsekvent i navigation, struktur och utformning.
+   * Låter meny, sidhuvud, sidfot, ikoner se ut på samma sätt på hela webbplatsen. Vissa blinda användare memorerar strukturen på en webbplats, och om den förändras mellan sidorna blir det besvärligt för dessa användare, liksom för personer med vissa kognitiva funktionsnedsättningar. Om webbplatsens layout är konsekvent kan färgerna skilja sig mellan avdelningarna utan att påverka enhetligheten, så länge de enskilda elementen beter sig likadant och återfinns på samma ställe.
+
+
+Källor:
+https://webbriktlinjer.se/ 
+https://sv.wikipedia.org/wiki/Tillg%C3%A4nglighet_f%C3%B6r_personer_med_funktionsneds%C3%A4ttning
