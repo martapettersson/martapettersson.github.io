@@ -146,7 +146,7 @@ Tillgänglighet i sig är något som borde vara en självklarhet. Däremot kan d
 
 Tillgänglighetskrav som jag har implementerat i detta projekt:
 * 1.1.1: Beskriv med text allt innehåll som inte är text.
-   * Med hjälp av alt beskriver jag bilder, och med aria-label attribut förtydligar ikoner och jag vart länkar leder.
+   * Med hjälp av alt attribut beskriver jag bilder, och med aria-label attribut förtydligar ikoner och jag vart länkar leder.
 * 1.4.3: Använd tillräcklig kontrast mellan text och bakgrund.
    * Med hjälp av Inspektera i browsern, välja ett element så kan jag se om kontrasten är tillräckligt hög. 
 * 2.4.2: Skriv beskrivande sidtitlar.
